@@ -1,0 +1,6 @@
+A words of thanks
+=================
+
+An article on `"Habr" <https://habr.com/ru/articles/316666/>`_ was the starting point for the development of `Telegram-Bot-Discussion`. I found the its idea very interesting.
+
+"Tigran Saluev" `@saluev <https://habr.com/ru/users/saluev/>`_, thank you!

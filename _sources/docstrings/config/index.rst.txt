@@ -1,0 +1,7 @@
+Config
+==================================
+
+.. automodule:: telegram_bot_discussion.config.config
+   :members:
+   :undoc-members:
+   :show-inheritance:

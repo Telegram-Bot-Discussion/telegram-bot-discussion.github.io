@@ -1,0 +1,7 @@
+Logger
+==================================
+
+.. automodule:: telegram_bot_discussion.logger.logger_interface
+   :members:
+   :undoc-members:
+   :show-inheritance:

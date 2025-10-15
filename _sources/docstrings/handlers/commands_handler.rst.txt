@@ -1,0 +1,25 @@
+Commands Handler
+----------------
+
+.. automodule:: telegram_bot_discussion.handlers.commands_handler.commands_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Commands handler exceptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: telegram_bot_discussion.handlers.commands_handler.exceptions.access_deny
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   
+.. automodule:: telegram_bot_discussion.handlers.commands_handler.exceptions.commands_map_is_empty
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   
+.. automodule:: telegram_bot_discussion.handlers.commands_handler.exceptions.not_registered
+   :members:
+   :undoc-members:
+   :show-inheritance:

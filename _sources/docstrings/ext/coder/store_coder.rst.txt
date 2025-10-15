@@ -1,0 +1,7 @@
+Store Coder
+----------------------------------
+
+.. automodule:: telegram_bot_discussion.ext.coder.store_coder
+   :members:
+   :undoc-members:
+   :show-inheritance:

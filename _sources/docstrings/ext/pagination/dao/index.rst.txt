@@ -1,0 +1,7 @@
+Item DAO
+------------------
+
+.. automodule:: telegram_bot_discussion.ext.pagination.dao.item
+   :members:
+   :undoc-members:
+   :show-inheritance:

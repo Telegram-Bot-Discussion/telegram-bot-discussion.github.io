@@ -1,0 +1,42 @@
+In short
+==================================
+
+This docstring-section based on the comments in the `telegram-bot-discussion` source code. 
+
+Theses about classes.
+
+`Discussion` is base class for store `Dialogues` states, setup `Handlers`, `Config` and `Logger` fo wall application, init and run `Telegram-bot`.
+
+`Dialogue` is class for construct yielded function like requests-responses flow between `Telegram-user` and `Telegram-bot`.
+
+`Replica` is class for construct `Dialogue` input-output items. In the box exist common replicas for differ discussions and dialogues: `EmptyReplica` (nothing reply), `AutoReply` (reply standard response for request), `CleanReplica` (force clear reply buttons), `NoNeedReactionReplica` (nothing reply, just proxy other `Replica` and go to next `Replica` without wait `Telegram-user` request), `StopReplica` (`Replica` for `Dialogue` stop). 
+    
+`Button` is base class for create `Telegram-bot button`.
+
+`ButtonMeta` is base help class for auto create meta information of `Button` (name, title, action for handle).
+
+`ButtonMap` is class for create map of actions by `Buttons` collections.
+
+`Params` is base class for formalize params which values stored in `Buttons`.
+
+`CoderInterface` is interface for serializers of `Params` values which stored in `Buttons`.
+
+`Command` is base class for implementation handler of `Telegram-bot command`` (like `/command`).
+
+`CommandMeta` is base help class for auto create meta information of `Command` (name, title, action for handle).
+
+`CommandMap` is class for create map of actions by `Commands` collections.
+
+`CommandMenu` is class for create menu by `Commands` collections.
+
+`Config` is base class for config of `Discussion`.
+
+`ButtonsHandler` is base class for handing `Telegram-bot buttons` clicks.
+
+`CommandsHandler` is base class for handing `Telegram-bot commands` calls.
+
+`ReplicasHandler` is base class for handing `Telegram-bot` input data updates from `Telegram-user`.
+    
+`Middleware` is base class for catch data at start of `handle()`-method in `ButtonsHandler`, `CommandsHandler`, `ReplicasHandler` work (for logging events, detect DDoS-activity and etc.).
+
+`Logger` is base class for logging activity in `Discussion`.

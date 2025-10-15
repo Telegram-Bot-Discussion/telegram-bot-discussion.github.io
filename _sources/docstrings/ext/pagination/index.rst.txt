@@ -1,0 +1,12 @@
+Pagination
+----------
+
+This class-set help to realize data pagination.
+
+.. toctree::
+   :hidden:
+
+   ./buttons/item_button.rst
+   ./buttons/page_button.rst
+   ./dao/index.rst
+   ./replicas/index.rst

@@ -1,0 +1,7 @@
+Button
+------
+
+.. automodule:: telegram_bot_discussion.button.button
+   :members:
+   :undoc-members:
+   :show-inheritance:

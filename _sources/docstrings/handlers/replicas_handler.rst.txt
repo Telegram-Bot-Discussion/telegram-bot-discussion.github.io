@@ -1,0 +1,15 @@
+Replicas Handler
+----------------
+
+.. automodule:: telegram_bot_discussion.handlers.replicas_handler.replicas_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Replicas handler exceptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny
+   :members:
+   :undoc-members:
+   :show-inheritance:

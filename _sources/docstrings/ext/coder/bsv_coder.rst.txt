@@ -1,0 +1,7 @@
+Bytes Separated Values Coder
+----------------------------------
+
+.. automodule:: telegram_bot_discussion.ext.coder.bsv_coder
+   :members:
+   :undoc-members:
+   :show-inheritance:

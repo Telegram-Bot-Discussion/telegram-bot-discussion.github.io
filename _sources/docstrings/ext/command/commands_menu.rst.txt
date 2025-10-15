@@ -1,0 +1,7 @@
+Help command functions
+----------------------
+
+.. automodule:: telegram_bot_discussion.ext.command.commands_menu
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,11 @@
+Command
+=======
+
+`Command` is base class for build actions of Telegram-bot command (like `/command``).
+
+.. toctree::
+   :hidden:
+
+   ./command_meta
+   ./command
+   ./command_map

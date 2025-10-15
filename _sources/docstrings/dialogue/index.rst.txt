@@ -1,0 +1,12 @@
+Dialogue
+========
+
+.. automodule:: telegram_bot_discussion.dialogue.replicas.base
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.dialogue.dialogue
+   :members:
+   :undoc-members:
+   :show-inheritance:

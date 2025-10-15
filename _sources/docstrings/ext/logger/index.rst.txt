@@ -1,0 +1,19 @@
+Loggers
+----------------------------------
+
+Examples of :doc:`LoggerInterface <../../logger/index>` realization.
+
+.. automodule:: telegram_bot_discussion.ext.logger.log_level
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.ext.logger.printer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.ext.logger.time_rotating_file
+   :members:
+   :undoc-members:
+   :show-inheritance:

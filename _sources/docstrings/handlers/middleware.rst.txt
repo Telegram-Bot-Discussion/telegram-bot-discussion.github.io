@@ -1,0 +1,7 @@
+Middleware
+----------
+
+.. automodule:: telegram_bot_discussion.handlers.middleware.base_middleware
+   :members:
+   :undoc-members:
+   :show-inheritance:

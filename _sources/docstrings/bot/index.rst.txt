@@ -1,0 +1,12 @@
+Discussion
+==================================
+
+.. automodule:: telegram_bot_discussion.bot.bot
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.bot.contextual
+   :members:
+   :undoc-members:
+   :show-inheritance:

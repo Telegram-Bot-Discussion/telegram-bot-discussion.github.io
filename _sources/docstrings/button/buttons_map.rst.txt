@@ -1,0 +1,7 @@
+Buttons Map
+-----------
+
+.. automodule:: telegram_bot_discussion.button.buttons_map
+   :members:
+   :undoc-members:
+   :show-inheritance:

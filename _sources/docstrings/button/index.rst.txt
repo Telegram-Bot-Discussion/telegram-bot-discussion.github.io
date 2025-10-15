@@ -1,0 +1,18 @@
+Button
+======
+
+Graphical user interface of Telegram-bots seems simple, but «The devil is in the details»:
+
+   - How serialize data into `Button`? 
+   - How deserialize callback query after catch `Button` click?
+   - How determine what `Button` was clicked?
+   - How protect `Button` action from fake callback query?
+
+.. toctree::
+   :hidden:
+
+   ./params
+   ./button_meta
+   ./button
+   ./buttons_map
+   ./coder_interface

@@ -1,0 +1,7 @@
+Command Meta
+------------
+
+.. automodule:: telegram_bot_discussion.command.command_meta
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,17 @@
+Functions
+==================================
+
+.. automodule:: telegram_bot_discussion.functions.chat_id
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.functions.from_user
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.functions.message
+   :members:
+   :undoc-members:
+   :show-inheritance:

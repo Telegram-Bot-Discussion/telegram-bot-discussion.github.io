@@ -1,0 +1,22 @@
+Page Button
+-----------
+
+.. automodule:: telegram_bot_discussion.ext.pagination.buttons.page_button_meta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.ext.pagination.buttons.page_button_params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.ext.pagination.buttons.page_button_i
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.ext.pagination.buttons.page_button
+   :members:
+   :undoc-members:
+   :show-inheritance:

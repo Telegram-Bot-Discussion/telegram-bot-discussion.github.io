@@ -1,0 +1,7 @@
+Help button functions
+---------------------
+
+.. automodule:: telegram_bot_discussion.ext.button.change_button_at_keyboard
+   :members:
+   :undoc-members:
+   :show-inheritance:

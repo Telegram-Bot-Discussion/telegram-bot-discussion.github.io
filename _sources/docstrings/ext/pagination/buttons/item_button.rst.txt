@@ -1,0 +1,17 @@
+Item Button
+-----------
+
+.. automodule:: telegram_bot_discussion.ext.pagination.buttons.item_button_meta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.ext.pagination.buttons.item_button_params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.ext.pagination.buttons.item_button
+   :members:
+   :undoc-members:
+   :show-inheritance:

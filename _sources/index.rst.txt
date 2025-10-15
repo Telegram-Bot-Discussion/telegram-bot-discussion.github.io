@@ -1,0 +1,54 @@
+Documentation
+=============
+
+`Telegram-Bot-Discussion` is Python-framework for Telegram-bot making.
+
+Main idea of `Telegram-Bot-Discussion` is simplification of dialogues-functions which save context between `Telegram-user` and `Telegram-bot` in requests-responses flow. 
+
+Developer in its `Discussion` just construct `Dialogue` logic by `Replicas` sequence and expected responses.
+
+.. toctree::
+   :maxdepth: 10
+   :titlesonly:
+   :caption: About
+
+   ./about/index.rst
+   ./about/install.rst
+   ./about/quick_start.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Docstrings
+   :titlesonly:
+   
+   ./docstrings/index.rst
+   ./docstrings/logger/index.rst
+   ./docstrings/config/index.rst
+   ./docstrings/bot/index.rst
+   ./docstrings/button/index.rst
+   ./docstrings/command/index.rst
+   ./docstrings/dialogue/index.rst
+   ./docstrings/functions/index.rst
+   ./docstrings/handlers/index.rst
+   ./docstrings/ext/index.rst
+
+.. toctree::
+   :caption: Examples & Online-Demos
+   :titlesonly:
+
+   ./examples/index.rst
+
+.. toctree::
+   :caption: Thanks
+   :titlesonly:
+
+   ./thanks/index.rst
+
+.. toctree::
+   :hidden:
+   :caption: Links
+
+   Python Package Index <https://pypi.org/project/telegram-bot-discussion/>
+   GitVerse Repo <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion>
+   GitVerse Repo (usage examples) <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>
+   

@@ -1,0 +1,7 @@
+Command Map
+-----------
+
+.. automodule:: telegram_bot_discussion.command.commands_map
+   :members:
+   :undoc-members:
+   :show-inheritance:

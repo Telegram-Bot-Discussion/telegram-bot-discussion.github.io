@@ -1,0 +1,7 @@
+Button Meta
+-----------
+
+.. automodule:: telegram_bot_discussion.button.button_meta
+   :members:
+   :undoc-members:
+   :show-inheritance:

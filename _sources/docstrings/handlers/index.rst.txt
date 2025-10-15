@@ -1,0 +1,18 @@
+Handlers
+========
+
+By focusing on the most commonly requested types of Telegram-bot events, I divided its capture into three routes:
+
+- Buttons-handler;
+- Commands-handler;
+- Replicas-handler (i.e. "other").
+
+Also all of them can use common `Middleware`.
+
+.. toctree::
+   :hidden:
+
+   ./buttons_handler
+   ./commands_handler
+   ./replicas_handler
+   ./middleware

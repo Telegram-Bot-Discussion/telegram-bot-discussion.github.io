@@ -1,0 +1,25 @@
+********************
+Introduction
+********************
+
+During the process of creating Telegram bots, interesting questions began to arise:
+
+   - How can I make my interaction with the `Telegram-bot` multi-step?
+
+   - How can I save the intermediate state of a long `Telegram-user` and `Telegram-bot` dialogue?
+
+   - How can I save the answers that the `Telegram-user` provides to the questions previously asked by the `Telegram-bot`, so that I can provide a conclusion based on all of the answers only at the end?
+   
+   - How can I build an algorithm for communicating with the `Telegram-bot` that is not linear, but rather intricate, maybe with some GPT?
+
+   - How can we effectively use the graphical user interface offered by the `Telegram` messenger to build interaction?
+
+   - How to take into account all the information security threats, even illusory ones? (For example: "How can I guarantee that only authorized `Telegram-user` can access `Telegram-bot` functions?", "Did the right `Telegram-user` click on the `Telegram-bot` button?", "Did the `Telegram-bot` previously generate the value sent when the button was clicked by `Telegram-user`, or did the malicious account correct it?", "Can we detect and respond to DDoS attacks in a flexible manner?" and etc.)
+   
+And the main question:
+
+   - **How can I share my experience and knowledge of building `Telegram-bots` with others developers?**
+
+The solution is to create a constructor that allows the developer to focus on their business idea and achieve a working result quickly and efficiently.
+
+So, `Telegram-Bot-Discussion` as Python-framework for `Telegram-bot` making - greetings to you!

@@ -1,0 +1,7 @@
+Command
+-------
+
+.. automodule:: telegram_bot_discussion.command.command
+   :members:
+   :undoc-members:
+   :show-inheritance:

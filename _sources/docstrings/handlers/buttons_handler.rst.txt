@@ -1,0 +1,35 @@
+Buttons Handler
+---------------
+
+.. automodule:: telegram_bot_discussion.handlers.buttons_handler.buttons_handler
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Buttons handler exceptions
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.handlers.buttons_handler.exceptions.buttons_map_is_empty
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error
+   :members:
+   :undoc-members:
+   :show-inheritance:

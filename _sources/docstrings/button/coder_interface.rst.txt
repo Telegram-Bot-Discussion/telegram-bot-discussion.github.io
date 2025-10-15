@@ -1,0 +1,7 @@
+Coder Interface
+---------------
+
+.. automodule:: telegram_bot_discussion.button.coder_interface
+   :members:
+   :undoc-members:
+   :show-inheritance:
