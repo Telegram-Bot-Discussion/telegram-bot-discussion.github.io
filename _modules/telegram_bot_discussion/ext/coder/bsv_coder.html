@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>telegram_bot_discussion.ext.coder.bsv_coder &mdash; Telegram-Bot-Discussion  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Telegram-Bot-Discussion
+              <img src="../../../../_static/discussion.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/quick_start.html">Quick start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/index.html">In short</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/logger/index.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/config/index.html">Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/bot/index.html">Discussion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/button/index.html">Button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/replica/index.html">Replica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/dialogue/index.html">Dialogue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/handlers/index.html">Handlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/ext/index.html">Extended</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples &amp; Online-Demos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../thanks/index.html">A words of thanks</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Telegram-Bot-Discussion</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">telegram_bot_discussion.ext.coder.bsv_coder</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for telegram_bot_discussion.ext.coder.bsv_coder</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">md5</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Union</span>
+
+
+<span class="kn">from</span> <span class="nn">...button.coder_interface</span> <span class="kn">import</span> <span class="n">CoderInterface</span>
+
+
+<span class="n">ThisTypesOnly</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="InvalidType">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.InvalidType">[docs]</a>
+<span class="k">class</span> <span class="nc">InvalidType</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="n">var</span><span class="p">:</span> <span class="n">Any</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">var</span> <span class="o">=</span> <span class="n">var</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Invalid type of variable </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">var</span><span class="si">}</span><span class="s2">&quot;</span></div>
+
+
+
+<div class="viewcode-block" id="NoneIsNotNone">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.NoneIsNotNone">[docs]</a>
+<span class="k">class</span> <span class="nc">NoneIsNotNone</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="n">data</span><span class="p">:</span> <span class="n">Any</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;None value has some data </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="si">}</span><span class="s2"> (len: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span></div>
+
+
+
+<div class="viewcode-block" id="IntIsNone">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.IntIsNone">[docs]</a>
+<span class="k">class</span> <span class="nc">IntIsNone</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Int is None&quot;</span></div>
+
+
+
+<div class="viewcode-block" id="InvalidTypePrefix">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.InvalidTypePrefix">[docs]</a>
+<span class="k">class</span> <span class="nc">InvalidTypePrefix</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="n">prefix</span><span class="p">:</span> <span class="n">Any</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">prefix</span> <span class="o">=</span> <span class="n">prefix</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Invalid type prefix </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix</span><span class="si">}</span><span class="s2">&quot;</span></div>
+
+
+
+<div class="viewcode-block" id="BSV_Coder">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.BSV_Coder">[docs]</a>
+<span class="k">class</span> <span class="nc">BSV_Coder</span><span class="p">(</span><span class="n">CoderInterface</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Bytes Separated Values Coder` serialize data with type-special byte-delimiter:</span>
+
+<span class="sd">    - \\x00 - `None` prefix;</span>
+<span class="sd">    - \\x01 - `int` prefix;</span>
+<span class="sd">    - \\x02 - `str` prefix.</span>
+
+<span class="sd">    Remember about native Telegram callback query data length limit.</span>
+
+<span class="sd">    Data deserialization relies on the preceding type-special byte-delimiter.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">secret</span><span class="p">:</span> <span class="nb">str</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; str: Secret string is used for make digital signature of data.&quot;&quot;&quot;</span>
+
+    <span class="n">_SIGNATURE_SUFFIX</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\x13</span><span class="s2">&quot;</span>
+
+    <span class="n">_NUL_PREFIX</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\x00</span><span class="s2">&quot;</span>
+    <span class="n">_INT_PREFIX</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\x01</span><span class="s2">&quot;</span>
+    <span class="n">_STR_PREFIX</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\x02</span><span class="s2">&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">secret</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">secret</span> <span class="o">=</span> <span class="n">secret</span>
+
+<div class="viewcode-block" id="BSV_Coder.serialize">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.BSV_Coder.serialize">[docs]</a>
+    <span class="k">def</span> <span class="nf">serialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">ThisTypesOnly</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">result</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">arg</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_NUL_PREFIX</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_INT_PREFIX</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_STR_PREFIX</span> <span class="o">+</span> <span class="n">arg</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">InvalidType</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span></div>
+
+
+<div class="viewcode-block" id="BSV_Coder.deserialize">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.BSV_Coder.deserialize">[docs]</a>
+    <span class="k">def</span> <span class="nf">deserialize</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">ThisTypesOnly</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_INT_PREFIX</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_STR_PREFIX</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_NUL_PREFIX</span><span class="p">,</span>
+        <span class="p">):</span>
+            <span class="k">raise</span> <span class="n">InvalidTypePrefix</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+        <span class="n">result</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">ThisTypesOnly</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">part</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="n">data_marker</span> <span class="o">=</span> <span class="n">part</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+            <span class="n">body_before_next_int_candidate</span> <span class="o">=</span> <span class="n">part</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_INT_PREFIX</span><span class="p">,</span> <span class="mi">1</span>
+            <span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">body_before_next_int_candidate_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">body_before_next_int_candidate</span><span class="p">)</span>
+
+            <span class="n">body_before_next_str_candidate</span> <span class="o">=</span> <span class="n">part</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_STR_PREFIX</span><span class="p">,</span> <span class="mi">1</span>
+            <span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">body_before_next_str_candidate_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">body_before_next_str_candidate</span><span class="p">)</span>
+
+            <span class="n">body_before_next_nul_candidate</span> <span class="o">=</span> <span class="n">part</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_NUL_PREFIX</span><span class="p">,</span> <span class="mi">1</span>
+            <span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">body_before_next_nul_candidate_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">body_before_next_nul_candidate</span><span class="p">)</span>
+
+            <span class="n">body_before_next_len</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span>
+                <span class="n">body_before_next_int_candidate_len</span><span class="p">,</span>
+                <span class="n">body_before_next_str_candidate_len</span><span class="p">,</span>
+                <span class="n">body_before_next_nul_candidate_len</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">data_body</span> <span class="o">=</span> <span class="n">part</span><span class="p">[</span><span class="mi">1</span> <span class="p">:</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">body_before_next_len</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">data_marker</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_INT_PREFIX</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">body_before_next_len</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="n">IntIsNone</span><span class="p">()</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">data_body</span><span class="p">))</span>
+            <span class="k">elif</span> <span class="n">data_marker</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_STR_PREFIX</span><span class="p">:</span>
+                <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data_body</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">data_marker</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_NUL_PREFIX</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">body_before_next_len</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">raise</span> <span class="n">NoneIsNotNone</span><span class="p">(</span><span class="n">data_body</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">InvalidTypePrefix</span><span class="p">(</span><span class="n">data_marker</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+            <span class="n">part</span> <span class="o">=</span> <span class="n">part</span><span class="p">[</span><span class="mi">1</span> <span class="o">+</span> <span class="n">body_before_next_len</span> <span class="p">:]</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">part</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">break</span>
+
+        <span class="k">return</span> <span class="n">result</span></div>
+
+
+<div class="viewcode-block" id="BSV_Coder.get_signature">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.BSV_Coder.get_signature">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_signature</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chat_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">serialized_data</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">sender_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">md5</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">serialized_data</span><span class="si">}{</span><span class="bp">self</span><span class="o">.</span><span class="n">secret</span><span class="si">}{</span><span class="n">chat_id</span><span class="si">}{</span><span class="n">sender_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="BSV_Coder.sign">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.BSV_Coder.sign">[docs]</a>
+    <span class="k">def</span> <span class="nf">sign</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signature</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">serialized_data</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_SIGNATURE_SUFFIX</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">signature</span><span class="p">,</span> <span class="n">serialized_data</span><span class="p">])</span></div>
+
+
+<div class="viewcode-block" id="BSV_Coder.extract_signature_and_serialized_data">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.BSV_Coder.extract_signature_and_serialized_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_signature_and_serialized_data</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">signed_serialized_data</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+        <span class="n">sign</span><span class="p">,</span> <span class="n">serialized_data</span> <span class="o">=</span> <span class="n">signed_serialized_data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">_SIGNATURE_SUFFIX</span><span class="p">,</span> <span class="mi">1</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="n">sign</span><span class="p">,</span> <span class="n">serialized_data</span></div>
+
+
+<div class="viewcode-block" id="BSV_Coder.extract_signature_and_deserialized_data">
+<a class="viewcode-back" href="../../../../docstrings/ext/coder/bsv_coder.html#telegram_bot_discussion.ext.coder.bsv_coder.BSV_Coder.extract_signature_and_deserialized_data">[docs]</a>
+    <span class="k">def</span> <span class="nf">extract_signature_and_deserialized_data</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">signed_serialized_data</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">ThisTypesOnly</span><span class="p">]]:</span>
+        <span class="n">sign</span><span class="p">,</span> <span class="n">serialized_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">extract_signature_and_serialized_data</span><span class="p">(</span>
+            <span class="n">signed_serialized_data</span>
+        <span class="p">)</span>
+        <span class="n">deserialized_data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">deserialize</span><span class="p">(</span><span class="n">serialized_data</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">sign</span><span class="p">,</span> <span class="n">deserialized_data</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, ILYA.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

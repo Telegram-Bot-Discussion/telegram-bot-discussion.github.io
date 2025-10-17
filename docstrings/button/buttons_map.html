@@ -48,10 +48,11 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../bot/index.html">Discussion</a></li>
@@ -64,6 +65,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers/index.html">Handlers</a></li>
@@ -73,11 +75,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -108,18 +114,39 @@
 <span id="buttons-map"></span><h1>Buttons Map<a class="headerlink" href="#module-telegram_bot_discussion.button.buttons_map" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.button.buttons_map.ButtonsMap">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.button.buttons_map.</span></span><span class="sig-name descname"><span class="pre">ButtonsMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">buttons</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.button.buttons_map.</span></span><span class="sig-name descname"><span class="pre">ButtonsMap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">buttons</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/button/buttons_map.html#ButtonsMap"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p><cite>ButtonsMap</cite> define accordance of action and <cite>Button</cite> class. It is needed for <cite>ButtonsHandler</cite> and find what <cite>Button</cite> was clicked.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>buttons</strong> (<em>Type</em><em>[</em><a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><em>Button</em></a><em>]</em>)</p>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.button.buttons_map.ButtonsMap.add">
-<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><span class="pre">ButtonsMap</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap.add" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/button/buttons_map.html#ButtonsMap.add"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap.add" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">ButtonsMap</span></code></a></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>x</strong> (<em>Type</em><em>[</em><a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><em>Button</em></a><em>]</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.button.buttons_map.ButtonsMap.search">
-<span class="sig-name descname"><span class="pre">search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap.search" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/button/buttons_map.html#ButtonsMap.search"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.button.buttons_map.ButtonsMap.search" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code>[<a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><code class="xref py py-class docutils literal notranslate"><span class="pre">Button</span></code></a>]]</span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>x</strong> (<em>str</em><em> | </em><em>Type</em><em>[</em><a class="reference internal" href="button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><em>Button</em></a><em>]</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 

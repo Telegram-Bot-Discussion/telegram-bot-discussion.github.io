@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>telegram_bot_discussion.handlers.commands_handler.commands_handler &mdash; Telegram-Bot-Discussion  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+      <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            Telegram-Bot-Discussion
+              <img src="../../../../_static/discussion.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/quick_start.html">Quick start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/index.html">In short</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/logger/index.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/config/index.html">Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/bot/index.html">Discussion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/button/index.html">Button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/replica/index.html">Replica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/dialogue/index.html">Dialogue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/handlers/index.html">Handlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../docstrings/ext/index.html">Extended</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples &amp; Online-Demos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../thanks/index.html">A words of thanks</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Telegram-Bot-Discussion</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">telegram_bot_discussion.handlers.commands_handler.commands_handler</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for telegram_bot_discussion.handlers.commands_handler.commands_handler</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">Type</span><span class="p">,</span> <span class="n">Union</span>
+
+
+<span class="kn">from</span> <span class="nn">telegram</span> <span class="kn">import</span> <span class="n">Update</span><span class="p">,</span> <span class="n">Message</span>
+<span class="kn">from</span> <span class="nn">telegram.ext</span> <span class="kn">import</span> <span class="n">CallbackContext</span>
+
+
+<span class="kn">from</span> <span class="nn">...command.command</span> <span class="kn">import</span> <span class="n">Command</span>
+<span class="kn">from</span> <span class="nn">...command.commands_map</span> <span class="kn">import</span> <span class="n">CommandsMap</span>
+<span class="kn">from</span> <span class="nn">...functions</span> <span class="kn">import</span> <span class="n">get_from_id</span>
+
+<span class="kn">from</span> <span class="nn">.exceptions.access_deny</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">CommandClassAccessDeny</span> <span class="k">as</span> <span class="n">CommandClassAccessDeny</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">.exceptions.commands_map_is_empty</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">CommandsMapIsEmpty</span> <span class="k">as</span> <span class="n">CommandsMapIsEmpty</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">.exceptions.not_registered</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">CommandClassIsNotRegistered</span> <span class="k">as</span> <span class="n">CommandClassIsNotRegistered</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<div class="viewcode-block" id="CommandsHandler">
+<a class="viewcode-back" href="../../../../docstrings/handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler">[docs]</a>
+<span class="k">class</span> <span class="nc">CommandsHandler</span><span class="p">:</span>
+    <span class="n">commands_map</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CommandsMap</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; CommandsMap: accordance of action and `Command`-class.&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">commands_map</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CommandsMap</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">commands_map</span> <span class="o">=</span> <span class="n">commands_map</span>
+
+<div class="viewcode-block" id="CommandsHandler.set_commands_map">
+<a class="viewcode-back" href="../../../../docstrings/handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler.set_commands_map">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_commands_map</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commands_map</span><span class="p">:</span> <span class="n">CommandsMap</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">commands_map</span> <span class="o">=</span> <span class="n">commands_map</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+<div class="viewcode-block" id="CommandsHandler.access_control_list">
+<a class="viewcode-back" href="../../../../docstrings/handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler.access_control_list">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">access_control_list</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">context</span><span class="p">:</span> <span class="n">CallbackContext</span><span class="p">,</span>
+        <span class="n">user_id</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+        <span class="n">command</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Command</span><span class="p">],</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Check user access to `Command`-class within `handle()`.&quot;&quot;&quot;</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">context</span><span class="p">,</span> <span class="n">user_id</span><span class="p">,</span> <span class="n">command</span>
+        <span class="k">return</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="CommandsHandler.middleware">
+<a class="viewcode-back" href="../../../../docstrings/handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler.middleware">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">middleware</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">,</span>
+        <span class="n">context</span><span class="p">:</span> <span class="n">CallbackContext</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">Update</span><span class="p">,</span> <span class="n">CallbackContext</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Middleware work within `handle()`. If it returns None, `handle()` will not work.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">update</span><span class="p">,</span> <span class="n">context</span></div>
+
+
+<div class="viewcode-block" id="CommandsHandler.handle">
+<a class="viewcode-back" href="../../../../docstrings/handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler.handle">[docs]</a>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">handle</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">,</span>
+        <span class="n">context</span><span class="p">:</span> <span class="n">CallbackContext</span><span class="p">,</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Catch all commands calls.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">middleware</span><span class="p">(</span>
+                <span class="n">update</span><span class="p">,</span>
+                <span class="n">context</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="ow">is</span> <span class="kc">None</span>
+        <span class="p">):</span>
+            <span class="k">return</span>
+
+        <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Message</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="n">update</span><span class="o">.</span><span class="n">message</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">message</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">message</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">message</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">):</span>
+            <span class="k">return</span>
+        <span class="n">command_name</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">text</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_handle_by_name</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">,</span> <span class="n">command_name</span><span class="p">)</span></div>
+
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">_handle_by_name</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">,</span>
+        <span class="n">context</span><span class="p">:</span> <span class="n">CallbackContext</span><span class="p">,</span>
+        <span class="n">command_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">commands_map</span><span class="p">,</span> <span class="n">CommandsMap</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">CommandsMapIsEmpty</span><span class="p">()</span>
+
+        <span class="n">command</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">commands_map</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">command_name</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">command</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CommandClassIsNotRegistered</span><span class="p">(</span><span class="n">command_name</span><span class="p">)</span>
+
+        <span class="n">from_id</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">get_from_id</span><span class="p">(</span><span class="n">update</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">access_control_list</span><span class="p">(</span>
+            <span class="n">context</span><span class="p">,</span>
+            <span class="n">from_id</span><span class="p">,</span>
+            <span class="n">command</span><span class="p">,</span>
+        <span class="p">):</span>
+            <span class="k">await</span> <span class="n">command</span><span class="p">()</span><span class="o">.</span><span class="n">on_call</span><span class="p">(</span>
+                <span class="n">update</span><span class="p">,</span>
+                <span class="n">context</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CommandClassAccessDeny</span><span class="p">(</span>
+                <span class="n">from_id</span><span class="p">,</span>
+                <span class="n">command_name</span><span class="p">,</span>
+            <span class="p">)</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, ILYA.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

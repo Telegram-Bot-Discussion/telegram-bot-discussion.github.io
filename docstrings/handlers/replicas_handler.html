@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Handlers</a><ul class="current">
@@ -72,11 +74,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -107,50 +113,115 @@
 <span id="replicas-handler"></span><h1>Replicas Handler<a class="headerlink" href="#module-telegram_bot_discussion.handlers.replicas_handler.replicas_handler" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.replicas_handler.replicas_handler.</span></span><span class="sig-name descname"><span class="pre">ReplicasHandler</span></span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.replicas_handler.replicas_handler.</span></span><span class="sig-name descname"><span class="pre">ReplicasHandler</span></span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.access_control_list">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">access_control_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replica_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../dialogue/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.access_control_list" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">access_control_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replica_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler.access_control_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.access_control_list" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>replica_class</strong> (<em>Type</em><em>[</em><a class="reference internal" href="../replica/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><em>Replica</em></a><em>]</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.middleware">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">middleware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Update</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">CallbackContext</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.middleware" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">middleware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler.middleware"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.middleware" title="Link to this definition"></a></dt>
 <dd><p>Middleware work within <cite>handle()</cite>. If it returns None, <cite>handle()</cite> will not work.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Update</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">CallbackContext</span></code>]]</span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.when_there_are_no_any_dialog">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">when_there_are_no_any_dialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Update</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">CallbackContext</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.when_there_are_no_any_dialog" title="Link to this definition"></a></dt>
-<dd><p>Do something if Telegram-bot have not any dialog with initiator (often User).</p>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">when_there_are_no_any_dialog</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler.when_there_are_no_any_dialog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.when_there_are_no_any_dialog" title="Link to this definition"></a></dt>
+<dd><p>Do something if Telegram-bot have not any dialogue with initiator (often User).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Update</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">CallbackContext</span></code>]]</span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.handle">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">handle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.handle" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">handle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler.handle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.handle" title="Link to this definition"></a></dt>
 <dd><p>Catch all events, which are not commands calls and buttons clicks.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="../functions/index.html#telegram_bot_discussion.functions.chat_id.ChatIdWasNotFetched" title="telegram_bot_discussion.functions.chat_id.ChatIdWasNotFetched"><strong>ChatIdWasNotFetched</strong></a> – If User was not detected, <cite>handle()</cite> try find other event initiator. If event initiator not found <cite>ChatIdWasNotFetched</cite> will be raised.</p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.get_replica_from_dialogue">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_replica_from_dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.get_replica_from_dialogue" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_replica_from_dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler.get_replica_from_dialogue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.get_replica_from_dialogue" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.start_dialogue">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dialogue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../dialogue/index.html#telegram_bot_discussion.dialogue.dialogue.Dialogue" title="telegram_bot_discussion.dialogue.dialogue.Dialogue"><span class="pre">Dialogue</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.start_dialogue" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dialogue</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler.start_dialogue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.start_dialogue" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+<li><p><strong>with_user_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>dialogue</strong> (<a class="reference internal" href="../dialogue/index.html#telegram_bot_discussion.dialogue.dialogue.Dialogue" title="telegram_bot_discussion.dialogue.dialogue.Dialogue"><em>Dialogue</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.stop_dialogue">
-<span class="sig-name descname"><span class="pre">stop_dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.stop_dialogue" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">stop_dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_user_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/replicas_handler.html#ReplicasHandler.stop_dialogue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler.stop_dialogue" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+<li><p><strong>with_user_id</strong> (<em>int</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
@@ -158,16 +229,24 @@
 <span id="replicas-handler-exceptions"></span><h2>Replicas handler exceptions<a class="headerlink" href="#module-telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny" title="Link to this heading"></a></h2>
 <dl class="py exception">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.</span></span><span class="sig-name descname"><span class="pre">ReplicaClassAccessDeny</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replica_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../dialogue/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.</span></span><span class="sig-name descname"><span class="pre">ReplicaClassAccessDeny</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replica_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/replicas_handler/exceptions/access_deny.html#ReplicaClassAccessDeny"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>replica_class</strong> (<em>Type</em><em>[</em><a class="reference internal" href="../replica/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><em>Replica</em></a><em>]</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny.user_id">
-<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny.user_id" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny.user_id" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny.replica_class">
-<span class="sig-name descname"><span class="pre">replica_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../dialogue/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny.replica_class" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">replica_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code><span class="pre">[</span><a class="reference internal" href="../replica/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.replicas_handler.exceptions.access_deny.ReplicaClassAccessDeny.replica_class" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>

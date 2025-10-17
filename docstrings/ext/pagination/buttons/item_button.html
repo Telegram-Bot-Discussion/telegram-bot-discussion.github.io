@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../handlers/index.html">Handlers</a></li>
@@ -80,11 +82,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -116,11 +122,11 @@
 <span id="item-button"></span><h1>Item Button<a class="headerlink" href="#module-telegram_bot_discussion.ext.pagination.buttons.item_button_meta" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.buttons.item_button_meta.</span></span><span class="sig-name descname"><span class="pre">ItemButtonMeta</span></span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.buttons.item_button_meta.</span></span><span class="sig-name descname"><span class="pre">ItemButtonMeta</span></span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/buttons/item_button_meta.html#ItemButtonMeta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../../button/button_meta.html#telegram_bot_discussion.button.button_meta.ButtonMeta" title="telegram_bot_discussion.button.button_meta.ButtonMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">ButtonMeta</span></code></a></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta.action">
-<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'view'</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta.action" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'view'</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta.action" title="Link to this definition"></a></dt>
 <dd><p>Unique action name for handling its reaction route in ButtonHandler.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -133,33 +139,49 @@
 
 <dl class="py class" id="module-telegram_bot_discussion.ext.pagination.buttons.item_button_params">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.buttons.item_button_params.</span></span><span class="sig-name descname"><span class="pre">ItemButtonParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.buttons.item_button_params.</span></span><span class="sig-name descname"><span class="pre">ItemButtonParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/buttons/item_button_params.html#ItemButtonParams"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../../button/params.html#telegram_bot_discussion.button.params.params.Params" title="telegram_bot_discussion.button.params.params.Params"><code class="xref py py-class docutils literal notranslate"><span class="pre">Params</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> (<em>str</em>)</p></li>
+<li><p><strong>item_id</strong> (<em>int</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams.item_id">
-<span class="sig-name descname"><span class="pre">item_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams.item_id" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">item_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams.item_id" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class" id="module-telegram_bot_discussion.ext.pagination.buttons.item_button">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.buttons.item_button.</span></span><span class="sig-name descname"><span class="pre">ItemButton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../dao/index.html#telegram_bot_discussion.ext.pagination.dao.item.Item" title="telegram_bot_discussion.ext.pagination.dao.item.Item"><span class="pre">Item</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.buttons.item_button.</span></span><span class="sig-name descname"><span class="pre">ItemButton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/buttons/item_button.html#ItemButton"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><code class="xref py py-class docutils literal notranslate"><span class="pre">Button</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>item</strong> (<a class="reference internal" href="../dao/index.html#telegram_bot_discussion.ext.pagination.dao.item.Item" title="telegram_bot_discussion.ext.pagination.dao.item.Item"><em>Item</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.Meta" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/buttons/item_button.html#ItemButton.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.Meta" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta" title="telegram_bot_discussion.ext.pagination.buttons.item_button_meta.ItemButtonMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">ItemButtonMeta</span></code></a></p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.item">
-<span class="sig-name descname"><span class="pre">item</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../dao/index.html#telegram_bot_discussion.ext.pagination.dao.item.Item" title="telegram_bot_discussion.ext.pagination.dao.item.Item"><span class="pre">Item</span></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.item" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">item</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../dao/index.html#telegram_bot_discussion.ext.pagination.dao.item.Item" title="telegram_bot_discussion.ext.pagination.dao.item.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.item" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.params">
-<span class="sig-name descname"><span class="pre">params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams" title="telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams"><span class="pre">ItemButtonParams</span></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.params" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams" title="telegram_bot_discussion.ext.pagination.buttons.item_button_params.ItemButtonParams"><code class="xref py py-class docutils literal notranslate"><span class="pre">ItemButtonParams</span></code></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.params" title="Link to this definition"></a></dt>
 <dd><p>What params and its value need to be stored in button.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -170,8 +192,16 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.on_click">
-<em class="property"><span class="pre">async</span><span class="w"> </span><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">on_click</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">__</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.on_click" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">on_click</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">__</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/buttons/item_button.html#ItemButton.on_click"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.buttons.item_button.ItemButton.on_click" title="Link to this definition"></a></dt>
 <dd><p>Reaction of User click to button</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>_</strong> (<em>Update</em>)</p></li>
+<li><p><strong>__</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>

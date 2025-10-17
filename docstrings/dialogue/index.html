@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Functions" href="../functions/index.html" />
-    <link rel="prev" title="Command Map" href="../command/command_map.html" /> 
+    <link rel="prev" title="Replica" href="../replica/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../replica/index.html">Replica</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers/index.html">Handlers</a></li>
@@ -66,11 +68,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -96,110 +102,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-telegram_bot_discussion.dialogue.replicas.base">
-<span id="dialogue"></span><h1>Dialogue<a class="headerlink" href="#module-telegram_bot_discussion.dialogue.replicas.base" title="Link to this heading"></a></h1>
+  <section id="module-telegram_bot_discussion.dialogue.dialogue">
+<span id="dialogue"></span><h1>Dialogue<a class="headerlink" href="#module-telegram_bot_discussion.dialogue.dialogue" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.replicas.base.</span></span><span class="sig-name descname"><span class="pre">ReplicaMeta</span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta" title="Link to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.Replica">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.replicas.base.</span></span><span class="sig-name descname"><span class="pre">Replica</span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="Link to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
-<dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.Replica.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.Replica.Meta" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta" title="telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReplicaMeta</span></code></a></p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.Replica.as_reply">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_reply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.Replica.as_reply" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.EmptyReplica">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.replicas.base.</span></span><span class="sig-name descname"><span class="pre">EmptyReplica</span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.EmptyReplica" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a></p>
-<p><cite>EmptyReplica</cite> nothing to reply.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.EmptyReplica.as_reply">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_reply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.EmptyReplica.as_reply" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.AutoReply">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.replicas.base.</span></span><span class="sig-name descname"><span class="pre">AutoReply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.AutoReply" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a></p>
-<p><cite>AutoReply</cite> reply standard answer for input user replicas (e.g. “OK”, “✓”, “Done” and etc.).</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.AutoReply.text">
-<span class="sig-name descname"><span class="pre">text</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.AutoReply.text" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.AutoReply.as_reply">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_reply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.AutoReply.as_reply" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.CleanReplica">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.replicas.base.</span></span><span class="sig-name descname"><span class="pre">CleanReplica</span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.CleanReplica" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a></p>
-<p><cite>EmptyReplica</cite> force clear buttons in user interface (<cite>telegram.ReplyKeyboardRemove</cite>).</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.CleanReplica.as_reply">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_reply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.CleanReplica.as_reply" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.replicas.base.</span></span><span class="sig-name descname"><span class="pre">NoNeedReactionReplica</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replica</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a></p>
-<p><cite>NoNeedReactionReplica</cite> just proxy other replica and go to next <cite>Dialogue</cite> stage without wait user answer.</p>
-<dl class="py attribute">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica.replica">
-<span class="sig-name descname"><span class="pre">replica</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a></em><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica.replica" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica.as_reply">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_reply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica.as_reply" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.replicas.base.StopReplica">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.replicas.base.</span></span><span class="sig-name descname"><span class="pre">StopReplica</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replica</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.dialogue.replicas.base.StopReplica" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica" title="telegram_bot_discussion.dialogue.replicas.base.NoNeedReactionReplica"><code class="xref py py-class docutils literal notranslate"><span class="pre">NoNeedReactionReplica</span></code></a></p>
-<p>StopReplica is stop-indicator for <cite>Dialogue</cite>.</p>
-</dd></dl>
-
-<dl class="py class" id="module-telegram_bot_discussion.dialogue.dialogue">
 <dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.dialogue.Dialogue">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.dialogue.</span></span><span class="sig-name descname"><span class="pre">Dialogue</span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.dialogue.Dialogue" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.dialogue.dialogue.</span></span><span class="sig-name descname"><span class="pre">Dialogue</span></span><a class="reference internal" href="../../_modules/telegram_bot_discussion/dialogue/dialogue.html#Dialogue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.dialogue.dialogue.Dialogue" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.dialogue.Dialogue.dialogue">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Generator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.StopReplica" title="telegram_bot_discussion.dialogue.replicas.base.StopReplica"><span class="pre">StopReplica</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Update</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.dialogue.Dialogue.dialogue" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dialogue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/dialogue/dialogue.html#Dialogue.dialogue"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.dialogue.dialogue.Dialogue.dialogue" title="Link to this definition"></a></dt>
 <dd><p>Method <cite>dialogue()</cite> contains yielded-sequence of <cite>Replicas</cite> which ended by <cite>StopReplica</cite>.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="telegram_bot_discussion.dialogue.dialogue.Dialogue.replicas_flow">
-<span class="sig-name descname"><span class="pre">replicas_flow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Generator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><span class="pre">Replica</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.dialogue.replicas.base.StopReplica" title="telegram_bot_discussion.dialogue.replicas.base.StopReplica"><span class="pre">StopReplica</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Update</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.dialogue.dialogue.Dialogue.replicas_flow" title="Link to this definition"></a></dt>
-<dd><p>Method <cite>replicas_flow()</cite> is internal and help init <cite>Replica</cite>-iterator by default first dialogue step.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Generator</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code>[<a class="reference internal" href="../replica/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a>, <a class="reference internal" href="../replica/index.html#telegram_bot_discussion.dialogue.replicas.base.StopReplica" title="telegram_bot_discussion.dialogue.replicas.base.StopReplica"><code class="xref py py-class docutils literal notranslate"><span class="pre">StopReplica</span></code></a>], <code class="xref py py-class docutils literal notranslate"><span class="pre">Update</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code>]</span></p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -210,7 +127,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../command/command_map.html" class="btn btn-neutral float-left" title="Command Map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../replica/index.html" class="btn btn-neutral float-left" title="Replica" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../functions/index.html" class="btn btn-neutral float-right" title="Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handlers/index.html">Handlers</a></li>
@@ -74,11 +76,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -110,7 +116,7 @@
 <p>Examples of <a class="reference internal" href="../../logger/index.html"><span class="doc">LoggerInterface</span></a> realization.</p>
 <dl class="py class" id="module-telegram_bot_discussion.ext.logger.log_level">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.log_level.LogLevel">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.logger.log_level.</span></span><span class="sig-name descname"><span class="pre">LogLevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qualname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boundary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.log_level.LogLevel" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.logger.log_level.</span></span><span class="sig-name descname"><span class="pre">LogLevel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/log_level.html#LogLevel"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.log_level.LogLevel" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.log_level.LogLevel.ERROR">
@@ -136,34 +142,42 @@
 
 <dl class="py class" id="module-telegram_bot_discussion.ext.logger.printer">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.printer.Printer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.logger.printer.</span></span><span class="sig-name descname"><span class="pre">Printer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#telegram_bot_discussion.ext.logger.log_level.LogLevel" title="telegram_bot_discussion.ext.logger.log_level.LogLevel"><span class="pre">LogLevel</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.logger.printer.</span></span><span class="sig-name descname"><span class="pre">Printer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/printer.html#Printer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../logger/index.html#telegram_bot_discussion.logger.logger_interface.LoggerInterface" title="telegram_bot_discussion.logger.logger_interface.LoggerInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoggerInterface</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>)</p></li>
+<li><p><strong>level</strong> (<a class="reference internal" href="#telegram_bot_discussion.ext.logger.log_level.LogLevel" title="telegram_bot_discussion.ext.logger.log_level.LogLevel"><em>LogLevel</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.printer.Printer.logger">
-<span class="sig-name descname"><span class="pre">logger</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Logger</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.logger" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">logger</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></em><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.logger" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.printer.Printer.debug">
-<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.debug" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/printer.html#Printer.debug"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.debug" title="Link to this definition"></a></dt>
 <dd><p>Fix data as debug-level message</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.printer.Printer.info">
-<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.info" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/printer.html#Printer.info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.info" title="Link to this definition"></a></dt>
 <dd><p>Fix data as info-level message</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.printer.Printer.warning">
-<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.warning" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/printer.html#Printer.warning"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.warning" title="Link to this definition"></a></dt>
 <dd><p>Fix data as warning-level message</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.printer.Printer.error">
-<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.error" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/printer.html#Printer.error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.printer.Printer.error" title="Link to this definition"></a></dt>
 <dd><p>Fix data as error-level message</p>
 </dd></dl>
 
@@ -171,34 +185,43 @@
 
 <dl class="py class" id="module-telegram_bot_discussion.ext.logger.time_rotating_file">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.logger.time_rotating_file.</span></span><span class="sig-name descname"><span class="pre">TimeRotatingFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#telegram_bot_discussion.ext.logger.log_level.LogLevel" title="telegram_bot_discussion.ext.logger.log_level.LogLevel"><span class="pre">LogLevel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.logger.time_rotating_file.</span></span><span class="sig-name descname"><span class="pre">TimeRotatingFile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/time_rotating_file.html#TimeRotatingFile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../logger/index.html#telegram_bot_discussion.logger.logger_interface.LoggerInterface" title="telegram_bot_discussion.logger.logger_interface.LoggerInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoggerInterface</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>)</p></li>
+<li><p><strong>level</strong> (<a class="reference internal" href="#telegram_bot_discussion.ext.logger.log_level.LogLevel" title="telegram_bot_discussion.ext.logger.log_level.LogLevel"><em>LogLevel</em></a>)</p></li>
+<li><p><strong>dir</strong> (<em>str</em><em> | </em><em>None</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.logger">
-<span class="sig-name descname"><span class="pre">logger</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Logger</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.logger" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">logger</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></em><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.logger" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.debug">
-<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.debug" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">debug</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/time_rotating_file.html#TimeRotatingFile.debug"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.debug" title="Link to this definition"></a></dt>
 <dd><p>Fix data as debug-level message</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.info">
-<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.info" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/time_rotating_file.html#TimeRotatingFile.info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.info" title="Link to this definition"></a></dt>
 <dd><p>Fix data as info-level message</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.warning">
-<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.warning" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">warning</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/time_rotating_file.html#TimeRotatingFile.warning"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.warning" title="Link to this definition"></a></dt>
 <dd><p>Fix data as warning-level message</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.error">
-<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.error" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/logger/time_rotating_file.html#TimeRotatingFile.error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.logger.time_rotating_file.TimeRotatingFile.error" title="Link to this definition"></a></dt>
 <dd><p>Fix data as error-level message</p>
 </dd></dl>
 

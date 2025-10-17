@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handlers/index.html">Handlers</a></li>
@@ -74,11 +76,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -110,26 +116,34 @@
 <p>Put command into button make reaction on click <cite>Telegram</cite>-button as <cite>Telegram</cite>-command call.</p>
 <dl class="py class" id="module-telegram_bot_discussion.ext.command_button.command_button_param">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command_button.command_button_param.</span></span><span class="sig-name descname"><span class="pre">CommandButtonParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command_button.command_button_param.</span></span><span class="sig-name descname"><span class="pre">CommandButtonParams</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">command_name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/command_button_param.html#CommandButtonParams"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../button/params.html#telegram_bot_discussion.button.params.params.Params" title="telegram_bot_discussion.button.params.params.Params"><code class="xref py py-class docutils literal notranslate"><span class="pre">Params</span></code></a></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams.command_name">
-<span class="sig-name descname"><span class="pre">command_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams.command_name" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">command_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams.command_name" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class" id="module-telegram_bot_discussion.ext.command_button.command_button">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.command_button.CommandButton">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command_button.command_button.</span></span><span class="sig-name descname"><span class="pre">CommandButton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><span class="pre">Command</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command_button.command_button.</span></span><span class="sig-name descname"><span class="pre">CommandButton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">command</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/command_button.html#CommandButton"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><code class="xref py py-class docutils literal notranslate"><span class="pre">Button</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>chat_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>command</strong> (<a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><em>Command</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.command_button.CommandButton.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.Meta" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/command_button.html#CommandButton.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.Meta" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../button/button.html#telegram_bot_discussion.button.button.Button.Meta" title="telegram_bot_discussion.button.button.Button.Meta"><code class="xref py py-class docutils literal notranslate"><span class="pre">Meta</span></code></a></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.command_button.CommandButton.Meta.action">
-<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'command'</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.Meta.action" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'command'</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.Meta.action" title="Link to this definition"></a></dt>
 <dd><p>Unique action name for handling its reaction route in ButtonHandler.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -142,7 +156,7 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.command_button.CommandButton.params">
-<span class="sig-name descname"><span class="pre">params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams" title="telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams"><span class="pre">CommandButtonParams</span></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.params" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams" title="telegram_bot_discussion.ext.command_button.command_button_param.CommandButtonParams"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandButtonParams</span></code></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.params" title="Link to this definition"></a></dt>
 <dd><p>What params and its value need to be stored in button.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -153,30 +167,64 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.command_button.CommandButton.on_click">
-<em class="property"><span class="pre">async</span><span class="w"> </span><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">on_click</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.on_click" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">on_click</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/command_button.html#CommandButton.on_click"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton.on_click" title="Link to this definition"></a></dt>
 <dd><p>Reaction of User click to button</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py class" id="module-telegram_bot_discussion.ext.command_button.commands_buttons_menu">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command_button.commands_buttons_menu.</span></span><span class="sig-name descname"><span class="pre">CommandsButtonsMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><span class="pre">CoderInterface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">commands_buttons</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="telegram_bot_discussion.ext.command_button.command_button.CommandButton"><span class="pre">CommandButton</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command_button.commands_buttons_menu.</span></span><span class="sig-name descname"><span class="pre">CommandsButtonsMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">commands_buttons</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/commands_buttons_menu.html#CommandsButtonsMenu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coder</strong> (<a class="reference internal" href="../../button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><em>CoderInterface</em></a>)</p></li>
+<li><p><strong>commands_buttons</strong> (<em>Sequence</em><em>[</em><em>Sequence</em><em>[</em><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="telegram_bot_discussion.ext.command_button.command_button.CommandButton"><em>CommandButton</em></a><em>]</em><em>] </em><em>| </em><em>None</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.set_commands_buttons">
-<span class="sig-name descname"><span class="pre">set_commands_buttons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands_buttons</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="telegram_bot_discussion.ext.command_button.command_button.CommandButton"><span class="pre">CommandButton</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu" title="telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu"><span class="pre">CommandsButtonsMenu</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.set_commands_buttons" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">set_commands_buttons</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands_buttons</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/commands_buttons_menu.html#CommandsButtonsMenu.set_commands_buttons"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.set_commands_buttons" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu" title="telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandsButtonsMenu</span></code></a></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>commands_buttons</strong> (<em>Sequence</em><em>[</em><em>Sequence</em><em>[</em><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="telegram_bot_discussion.ext.command_button.command_button.CommandButton"><em>CommandButton</em></a><em>]</em><em>]</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.get_commands_buttons">
-<span class="sig-name descname"><span class="pre">get_commands_buttons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="telegram_bot_discussion.ext.command_button.command_button.CommandButton"><span class="pre">CommandButton</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.get_commands_buttons" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_commands_buttons</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/commands_buttons_menu.html#CommandsButtonsMenu.get_commands_buttons"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.get_commands_buttons" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<a class="reference internal" href="#telegram_bot_discussion.ext.command_button.command_button.CommandButton" title="telegram_bot_discussion.ext.command_button.command_button.CommandButton"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandButton</span></code></a>]]</span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.as_keyboard">
-<span class="sig-name descname"><span class="pre">as_keyboard</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">InlineKeyboardMarkup</span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.as_keyboard" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">as_keyboard</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command_button/commands_buttons_menu.html#CommandsButtonsMenu.as_keyboard"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command_button.commands_buttons_menu.CommandsButtonsMenu.as_keyboard" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">InlineKeyboardMarkup</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 

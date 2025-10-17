@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Handlers</a><ul class="current">
@@ -72,11 +74,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -107,11 +113,19 @@
 <span id="buttons-handler"></span><h1>Buttons Handler<a class="headerlink" href="#module-telegram_bot_discussion.handlers.buttons_handler.buttons_handler" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.buttons_handler.</span></span><span class="sig-name descname"><span class="pre">ButtonsHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coder</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><span class="pre">CoderInterface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">buttons_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../button/buttons_map.html#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><span class="pre">ButtonsMap</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.buttons_handler.</span></span><span class="sig-name descname"><span class="pre">ButtonsHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">coder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buttons_map</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/buttons_handler.html#ButtonsHandler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>coder</strong> (<a class="reference internal" href="../button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><em>CoderInterface</em></a>)</p></li>
+<li><p><strong>buttons_map</strong> (<a class="reference internal" href="../button/buttons_map.html#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><em>ButtonsMap</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.coder">
-<span class="sig-name descname"><span class="pre">coder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><span class="pre">CoderInterface</span></a></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.coder" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">coder</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoderInterface</span></code></a></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.coder" title="Link to this definition"></a></dt>
 <dd><p>how to serialize and deserialize stored in button data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -122,7 +136,7 @@
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.buttons_map">
-<span class="sig-name descname"><span class="pre">buttons_map</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../button/buttons_map.html#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><span class="pre">ButtonsMap</span></a></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.buttons_map" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">buttons_map</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../button/buttons_map.html#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><code class="xref py py-class docutils literal notranslate"><span class="pre">ButtonsMap</span></code></a></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.buttons_map" title="Link to this definition"></a></dt>
 <dd><p>accordance of action and <cite>Button</cite> class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -133,25 +147,61 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.set_buttons_map">
-<span class="sig-name descname"><span class="pre">set_buttons_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buttons_map</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../button/buttons_map.html#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><span class="pre">ButtonsMap</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.set_buttons_map" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">set_buttons_map</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buttons_map</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/buttons_handler.html#ButtonsHandler.set_buttons_map"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.set_buttons_map" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>buttons_map</strong> (<a class="reference internal" href="../button/buttons_map.html#telegram_bot_discussion.button.buttons_map.ButtonsMap" title="telegram_bot_discussion.button.buttons_map.ButtonsMap"><em>ButtonsMap</em></a>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.access_control_list">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">access_control_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">button_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.access_control_list" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">access_control_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">button_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/buttons_handler.html#ButtonsHandler.access_control_list"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.access_control_list" title="Link to this definition"></a></dt>
 <dd><p>Check user access to <cite>Button</cite>-class within <cite>handle()</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+<li><p><strong>user_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>button_class</strong> (<em>Type</em><em>[</em><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><em>Button</em></a><em>]</em>)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.middleware">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">middleware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Update</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">CallbackContext</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.middleware" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">middleware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/buttons_handler.html#ButtonsHandler.middleware"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.middleware" title="Link to this definition"></a></dt>
 <dd><p>Middleware work within <cite>handle()</cite>. If it returns None, <cite>handle()</cite> will not work.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Update</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">CallbackContext</span></code>]]</span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.handle">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">handle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.handle" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">handle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/buttons_handler.html#ButtonsHandler.handle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler.handle" title="Link to this definition"></a></dt>
 <dd><p>Catch all buttons clicks.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -160,60 +210,86 @@
 <span id="buttons-handler-exceptions"></span><h2>Buttons handler exceptions<a class="headerlink" href="#module-telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny" title="Link to this heading"></a></h2>
 <dl class="py exception">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.</span></span><span class="sig-name descname"><span class="pre">ButtonClassAccessDeny</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">button_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.</span></span><span class="sig-name descname"><span class="pre">ButtonClassAccessDeny</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">button_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/exceptions/access_deny.html#ButtonClassAccessDeny"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>button_class</strong> (<em>str</em><em> | </em><em>Type</em><em>[</em><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><em>Button</em></a><em>]</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny.user_id">
-<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny.user_id" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny.user_id" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny.button_class">
-<span class="sig-name descname"><span class="pre">button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny.button_class" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code><span class="pre">[</span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><code class="xref py py-class docutils literal notranslate"><span class="pre">Button</span></code></a><span class="pre">]]</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.access_deny.ButtonClassAccessDeny.button_class" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py exception" id="module-telegram_bot_discussion.handlers.buttons_handler.exceptions.buttons_map_is_empty">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.buttons_map_is_empty.ButtonsMapIsEmpty">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.buttons_map_is_empty.</span></span><span class="sig-name descname"><span class="pre">ButtonsMapIsEmpty</span></span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.buttons_map_is_empty.ButtonsMapIsEmpty" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.buttons_map_is_empty.</span></span><span class="sig-name descname"><span class="pre">ButtonsMapIsEmpty</span></span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/exceptions/buttons_map_is_empty.html#ButtonsMapIsEmpty"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.buttons_map_is_empty.ButtonsMapIsEmpty" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 </dd></dl>
 
 <dl class="py exception" id="module-telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.ButtonClassLifeTimeOverflow">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.</span></span><span class="sig-name descname"><span class="pre">ButtonClassLifeTimeOverflow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">button_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.ButtonClassLifeTimeOverflow" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.</span></span><span class="sig-name descname"><span class="pre">ButtonClassLifeTimeOverflow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">button_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/exceptions/life_time_overflow.html#ButtonClassLifeTimeOverflow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.ButtonClassLifeTimeOverflow" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>button_class</strong> (<em>str</em><em> | </em><em>Type</em><em>[</em><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><em>Button</em></a><em>]</em>)</p>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.ButtonClassLifeTimeOverflow.button_class">
-<span class="sig-name descname"><span class="pre">button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.ButtonClassLifeTimeOverflow.button_class" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code><span class="pre">[</span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><code class="xref py py-class docutils literal notranslate"><span class="pre">Button</span></code></a><span class="pre">]]</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.life_time_overflow.ButtonClassLifeTimeOverflow.button_class" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py exception" id="module-telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.ButtonClassIsNotRegistered">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.</span></span><span class="sig-name descname"><span class="pre">ButtonClassIsNotRegistered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">button_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.ButtonClassIsNotRegistered" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.</span></span><span class="sig-name descname"><span class="pre">ButtonClassIsNotRegistered</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">button_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/exceptions/not_registered.html#ButtonClassIsNotRegistered"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.ButtonClassIsNotRegistered" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>button_class</strong> (<em>str</em><em> | </em><em>Type</em><em>[</em><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><em>Button</em></a><em>]</em>)</p>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.ButtonClassIsNotRegistered.button_class">
-<span class="sig-name descname"><span class="pre">button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><span class="pre">Button</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.ButtonClassIsNotRegistered.button_class" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code><span class="pre">[</span><a class="reference internal" href="../button/button.html#telegram_bot_discussion.button.button.Button" title="telegram_bot_discussion.button.button.Button"><code class="xref py py-class docutils literal notranslate"><span class="pre">Button</span></code></a><span class="pre">]]</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.not_registered.ButtonClassIsNotRegistered.button_class" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py exception" id="module-telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.</span></span><span class="sig-name descname"><span class="pre">ButtonDataSignificationError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.</span></span><span class="sig-name descname"><span class="pre">ButtonDataSignificationError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/buttons_handler/exceptions/signification_error.html#ButtonDataSignificationError"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>data</strong> (<em>str</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError.user_id">
-<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError.user_id" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">user_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError.user_id" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError.data">
-<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError.data" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#telegram_bot_discussion.handlers.buttons_handler.exceptions.signification_error.ButtonDataSignificationError.data" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>

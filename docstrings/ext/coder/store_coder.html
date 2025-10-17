@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handlers/index.html">Handlers</a></li>
@@ -78,11 +80,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -114,36 +120,60 @@
 <span id="store-coder"></span><h1>Store Coder<a class="headerlink" href="#module-telegram_bot_discussion.ext.coder.store_coder" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.coder.store_coder.</span></span><span class="sig-name descname"><span class="pre">KeyValueStorageInterface</span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.coder.store_coder.</span></span><span class="sig-name descname"><span class="pre">KeyValueStorageInterface</span></span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#KeyValueStorageInterface"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
 <p>KeyValueStorageInterface is interface for external storage where custom values of <cite>Params</cite> are stored.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.autogenerate_primary_key">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">autogenerate_primary_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.autogenerate_primary_key" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">autogenerate_primary_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#KeyValueStorageInterface.autogenerate_primary_key"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.autogenerate_primary_key" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.get">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.get" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#KeyValueStorageInterface.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.get" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>key</strong> (<em>str</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.add">
-<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.add" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<em class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#KeyValueStorageInterface.add"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface.add" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>value</strong> (<em>Any</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.coder.store_coder.</span></span><span class="sig-name descname"><span class="pre">StoreCoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">secret</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface" title="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface"><span class="pre">KeyValueStorageInterface</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.coder.store_coder.</span></span><span class="sig-name descname"><span class="pre">StoreCoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">secret</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#StoreCoder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="../../button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoderInterface</span></code></a></p>
 <p><cite>StoreCoder</cite> serialize data and save its value in external storage with unique primary key.
 Primary key store at <cite>Button</cite>. For deserialize data was get from external storage by primary key.</p>
 <p>So there are no any limits for callback query data (long strings, complex multi params, redundant big json and etc.).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>secret</strong> (<em>str</em>)</p></li>
+<li><p><strong>db</strong> (<a class="reference internal" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface" title="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface"><em>KeyValueStorageInterface</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.secret">
-<span class="sig-name descname"><span class="pre">secret</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.secret" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">secret</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.secret" title="Link to this definition"></a></dt>
 <dd><p>Secret string is used for make digital signature of data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -154,7 +184,7 @@ Primary key store at <cite>Button</cite>. For deserialize data was get from exte
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.db">
-<span class="sig-name descname"><span class="pre">db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface" title="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface"><span class="pre">KeyValueStorageInterface</span></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.db" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface" title="telegram_bot_discussion.ext.coder.store_coder.KeyValueStorageInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeyValueStorageInterface</span></code></a></em><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.db" title="Link to this definition"></a></dt>
 <dd><p>external storage where custom values of <cite>Params</cite> are stored.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
@@ -165,33 +195,88 @@ Primary key store at <cite>Button</cite>. For deserialize data was get from exte
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.serialize">
-<span class="sig-name descname"><span class="pre">serialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.serialize" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">serialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#StoreCoder.serialize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.serialize" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>args</strong> (<em>Any</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.deserialize">
-<span class="sig-name descname"><span class="pre">deserialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.deserialize" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">deserialize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#StoreCoder.deserialize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.deserialize" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]</span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>data</strong> (<em>str</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.get_signature">
-<span class="sig-name descname"><span class="pre">get_signature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serialized_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sender_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.get_signature" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_signature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chat_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serialized_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sender_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#StoreCoder.get_signature"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.get_signature" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>chat_id</strong> (<em>int</em>)</p></li>
+<li><p><strong>serialized_data</strong> (<em>str</em>)</p></li>
+<li><p><strong>sender_id</strong> (<em>int</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.sign">
-<span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signature</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serialized_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.sign" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">sign</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serialized_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#StoreCoder.sign"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.sign" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>signature</strong> (<em>str</em>)</p></li>
+<li><p><strong>serialized_data</strong> (<em>str</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.extract_signature_and_serialized_data">
-<span class="sig-name descname"><span class="pre">extract_signature_and_serialized_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signed_serialized_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.extract_signature_and_serialized_data" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">extract_signature_and_serialized_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signed_serialized_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#StoreCoder.extract_signature_and_serialized_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.extract_signature_and_serialized_data" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>]</span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>signed_serialized_data</strong> (<em>str</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.coder.store_coder.StoreCoder.extract_signature_and_deserialized_data">
-<span class="sig-name descname"><span class="pre">extract_signature_and_deserialized_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signed_serialized_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.extract_signature_and_deserialized_data" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">extract_signature_and_deserialized_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signed_serialized_data</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/coder/store_coder.html#StoreCoder.extract_signature_and_deserialized_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.coder.store_coder.StoreCoder.extract_signature_and_deserialized_data" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code>[<code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code>]]</span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>signed_serialized_data</strong> (<em>str</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 

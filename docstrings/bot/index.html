@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../config/index.html">Config</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../handlers/index.html">Handlers</a></li>
@@ -66,11 +68,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -100,30 +106,48 @@
 <span id="discussion"></span><h1>Discussion<a class="headerlink" href="#module-telegram_bot_discussion.bot.bot" title="Link to this heading"></a></h1>
 <dl class="py exception">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.ApplicationWasNotInit">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.bot.</span></span><span class="sig-name descname"><span class="pre">ApplicationWasNotInit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.ApplicationWasNotInit" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.bot.</span></span><span class="sig-name descname"><span class="pre">ApplicationWasNotInit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#ApplicationWasNotInit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.ApplicationWasNotInit" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 <p>Exception raise when Telegram-bot application was not init in some reason (in the general case Telegram-bot application initialized automatically).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.bot.</span></span><span class="sig-name descname"><span class="pre">Discussion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../logger/index.html#telegram_bot_discussion.logger.logger_interface.LoggerInterface" title="telegram_bot_discussion.logger.logger_interface.LoggerInterface"><span class="pre">LoggerInterface</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../config/index.html#telegram_bot_discussion.config.config.Config" title="telegram_bot_discussion.config.config.Config"><span class="pre">Config</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.bot.</span></span><span class="sig-name descname"><span class="pre">Discussion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p><cite>Discussion</cite> is main class of your Telegram-bot application.</p>
 <p>It could be say that the <cite>Discussion</cite> is <cite>Telegram</cite>-bot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>logger</strong> (<a class="reference internal" href="../logger/index.html#telegram_bot_discussion.logger.logger_interface.LoggerInterface" title="telegram_bot_discussion.logger.logger_interface.LoggerInterface"><em>LoggerInterface</em></a>)</p></li>
+<li><p><strong>config</strong> (<a class="reference internal" href="../config/index.html#telegram_bot_discussion.config.config.Config" title="telegram_bot_discussion.config.config.Config"><em>Config</em></a>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.config">
-<span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../config/index.html#telegram_bot_discussion.config.config.Config" title="telegram_bot_discussion.config.config.Config"><span class="pre">Config</span></a></em><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.config" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../config/index.html#telegram_bot_discussion.config.config.Config" title="telegram_bot_discussion.config.config.Config"><code class="xref py py-class docutils literal notranslate"><span class="pre">Config</span></code></a></em><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.config" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.get_application">
-<span class="sig-name descname"><span class="pre">get_application</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Application</span></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_application" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_application</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.get_application"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_application" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Application</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.bot">
-<span class="sig-name descname"><span class="pre">bot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ExtBot</span></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.bot" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">bot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.bot"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.bot" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p>native Telegram-bot object.</p>
@@ -136,61 +160,115 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.get_dialogues">
-<span class="sig-name descname"><span class="pre">get_dialogues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Iterable</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_dialogues" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_dialogues</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.get_dialogues"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_dialogues" title="Link to this definition"></a></dt>
 <dd><p>Dialogues structure <cite>Dict[int, Iterable]</cite> - is main idea of <cite>telegram-bot-discussion</cite>.</p>
 <p>It is a dictionary collection of pairs of Bot User ID and the next stage of their dialogue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Iterable</span></code>]</span></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.get_logger">
-<span class="sig-name descname"><span class="pre">get_logger</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../logger/index.html#telegram_bot_discussion.logger.logger_interface.LoggerInterface" title="telegram_bot_discussion.logger.logger_interface.LoggerInterface"><span class="pre">LoggerInterface</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_logger" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_logger</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.get_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_logger" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="../logger/index.html#telegram_bot_discussion.logger.logger_interface.LoggerInterface" title="telegram_bot_discussion.logger.logger_interface.LoggerInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoggerInterface</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.init_application">
-<span class="sig-name descname"><span class="pre">init_application</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_read_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_write_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_pool_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_connect_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><span class="pre">Discussion</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.init_application" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">init_application</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">read_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_read_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">write_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_write_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_pool_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_updates_connect_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">600</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.init_application"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.init_application" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><code class="xref py py-class docutils literal notranslate"><span class="pre">Discussion</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.set_commands_handler">
-<span class="sig-name descname"><span class="pre">set_commands_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands_handler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler" title="telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler"><span class="pre">CommandsHandler</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><span class="pre">Discussion</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.set_commands_handler" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">set_commands_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands_handler</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.set_commands_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.set_commands_handler" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><code class="xref py py-class docutils literal notranslate"><span class="pre">Discussion</span></code></a></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>commands_handler</strong> (<a class="reference internal" href="../handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler" title="telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler"><em>CommandsHandler</em></a>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.set_replicas_handler">
-<span class="sig-name descname"><span class="pre">set_replicas_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replicas_handler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../handlers/replicas_handler.html#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler" title="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler"><span class="pre">ReplicasHandler</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><span class="pre">Discussion</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.set_replicas_handler" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">set_replicas_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replicas_handler</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.set_replicas_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.set_replicas_handler" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><code class="xref py py-class docutils literal notranslate"><span class="pre">Discussion</span></code></a></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>replicas_handler</strong> (<a class="reference internal" href="../handlers/replicas_handler.html#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler" title="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler"><em>ReplicasHandler</em></a>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.set_buttons_handler">
-<span class="sig-name descname"><span class="pre">set_buttons_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buttons_handler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../handlers/buttons_handler.html#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler" title="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler"><span class="pre">ButtonsHandler</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><span class="pre">Discussion</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.set_buttons_handler" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">set_buttons_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">buttons_handler</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.set_buttons_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.set_buttons_handler" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#telegram_bot_discussion.bot.bot.Discussion" title="telegram_bot_discussion.bot.bot.Discussion"><code class="xref py py-class docutils literal notranslate"><span class="pre">Discussion</span></code></a></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>buttons_handler</strong> (<a class="reference internal" href="../handlers/buttons_handler.html#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler" title="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler"><em>ButtonsHandler</em></a>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.get_buttons_handler">
-<span class="sig-name descname"><span class="pre">get_buttons_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../handlers/buttons_handler.html#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler" title="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler"><span class="pre">ButtonsHandler</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_buttons_handler" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_buttons_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.get_buttons_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_buttons_handler" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="../handlers/buttons_handler.html#telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler" title="telegram_bot_discussion.handlers.buttons_handler.buttons_handler.ButtonsHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">ButtonsHandler</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.get_commands_handler">
-<span class="sig-name descname"><span class="pre">get_commands_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler" title="telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler"><span class="pre">CommandsHandler</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_commands_handler" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_commands_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.get_commands_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_commands_handler" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="../handlers/commands_handler.html#telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler" title="telegram_bot_discussion.handlers.commands_handler.commands_handler.CommandsHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandsHandler</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.get_replicas_handler">
-<span class="sig-name descname"><span class="pre">get_replicas_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../handlers/replicas_handler.html#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler" title="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler"><span class="pre">ReplicasHandler</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_replicas_handler" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_replicas_handler</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.get_replicas_handler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.get_replicas_handler" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="../handlers/replicas_handler.html#telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler" title="telegram_bot_discussion.handlers.replicas_handler.replicas_handler.ReplicasHandler"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReplicasHandler</span></code></a></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.bot.Discussion.start">
-<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.start" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">start</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/bot.html#Discussion.start"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.bot.Discussion.start" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class" id="module-telegram_bot_discussion.bot.contextual">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.contextual.Contextual">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.contextual.</span></span><span class="sig-name descname"><span class="pre">Contextual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.Contextual" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.contextual.</span></span><span class="sig-name descname"><span class="pre">Contextual</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/contextual.html#Contextual"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.Contextual" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Generic</span></code>[<code class="xref py py-obj docutils literal notranslate"><span class="pre">T</span></code>]</p>
 <p><cite>Contextual</cite>-generic help fetch your <cite>Discussion</cite> inheritance from context.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">It</span> <span class="ow">is</span> <span class="n">your</span> <span class="n">bot</span>
@@ -206,22 +284,30 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">discussion</span><span class="o">.</span><span class="n">child_filed</span><span class="p">)</span>
 </pre></div>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>context</strong> (<em>CallbackContext</em>)</p>
+</dd>
+</dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.contextual.Contextual.context">
-<span class="sig-name descname"><span class="pre">context</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CallbackContext</span></em><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.Contextual.context" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">context</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">CallbackContext</span></code></em><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.Contextual.context" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.contextual.Contextual.instance">
-<span class="sig-name descname"><span class="pre">instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">T</span></span></span><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.Contextual.instance" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">instance</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/contextual.html#Contextual.instance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.Contextual.instance" title="Link to this definition"></a></dt>
 <dd><p>Fetch instance of your Discussion-child from context.</p>
-<p>But better use more shot syntax sugar:</p>
+<p>But better use more shot syntactic sugar:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">discussion</span><span class="p">:</span> <span class="n">ChildBotOfDiscussion</span> <span class="o">=</span> <span class="n">Contextual</span><span class="p">[</span><span class="n">ChildBotOfDiscussion</span><span class="p">](</span><span class="n">context</span><span class="p">)()</span>
 </pre></div>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="#telegram_bot_discussion.bot.contextual.ContextObjectIsNotDiscussion" title="telegram_bot_discussion.bot.contextual.ContextObjectIsNotDiscussion"><strong>ContextObjectIsNotDiscussion</strong></a> – when fetched object is not detected as Discussion-child.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code>(<code class="docutils literal notranslate"><span class="pre">T</span></code>)</span></p>
 </dd>
 </dl>
 </dd></dl>
@@ -230,7 +316,7 @@
 
 <dl class="py exception">
 <dt class="sig sig-object py" id="telegram_bot_discussion.bot.contextual.ContextObjectIsNotDiscussion">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.contextual.</span></span><span class="sig-name descname"><span class="pre">ContextObjectIsNotDiscussion</span></span><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.ContextObjectIsNotDiscussion" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.bot.contextual.</span></span><span class="sig-name descname"><span class="pre">ContextObjectIsNotDiscussion</span></span><a class="reference internal" href="../../_modules/telegram_bot_discussion/bot/contextual.html#ContextObjectIsNotDiscussion"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.bot.contextual.ContextObjectIsNotDiscussion" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 </dd></dl>
 

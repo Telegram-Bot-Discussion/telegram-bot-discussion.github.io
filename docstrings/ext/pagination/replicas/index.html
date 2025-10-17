@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../handlers/index.html">Handlers</a></li>
@@ -80,11 +82,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -116,8 +122,8 @@
 <span id="page-replica"></span><h1>Page replica<a class="headerlink" href="#module-telegram_bot_discussion.ext.pagination.replicas.page_meta" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page_meta.PageReplicaMeta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.replicas.page_meta.</span></span><span class="sig-name descname"><span class="pre">PageReplicaMeta</span></span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page_meta.PageReplicaMeta" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="../../../dialogue/index.html#telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta" title="telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReplicaMeta</span></code></a></p>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.replicas.page_meta.</span></span><span class="sig-name descname"><span class="pre">PageReplicaMeta</span></span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/replicas/page_meta.html#PageReplicaMeta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page_meta.PageReplicaMeta" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../../replica/index.html#telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta" title="telegram_bot_discussion.dialogue.replicas.base.ReplicaMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReplicaMeta</span></code></a></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page_meta.PageReplicaMeta.item_class">
 <span class="sig-name descname"><span class="pre">item_class</span></span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page_meta.PageReplicaMeta.item_class" title="Link to this definition"></a></dt>
@@ -134,33 +140,50 @@
 
 <dl class="py class" id="module-telegram_bot_discussion.ext.pagination.replicas.page">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page.PageReplica">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.replicas.page.</span></span><span class="sig-name descname"><span class="pre">PageReplica</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_button_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../buttons/page_button.html#telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface" title="telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface"><span class="pre">PageButtonInterface</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference internal" href="../../../dialogue/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a></p>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.pagination.replicas.page.</span></span><span class="sig-name descname"><span class="pre">PageReplica</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_button_class</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/replicas/page.html#PageReplica"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="../../../replica/index.html#telegram_bot_discussion.dialogue.replicas.base.Replica" title="telegram_bot_discussion.dialogue.replicas.base.Replica"><code class="xref py py-class docutils literal notranslate"><span class="pre">Replica</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>Any</em>)</p></li>
+<li><p><strong>page</strong> (<em>int</em>)</p></li>
+<li><p><strong>page_button_class</strong> (<em>Type</em><em>[</em><a class="reference internal" href="../buttons/page_button.html#telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface" title="telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface"><em>PageButtonInterface</em></a><em>]</em>)</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.Meta" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/replicas/page.html#PageReplica.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.Meta" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="#telegram_bot_discussion.ext.pagination.replicas.page_meta.PageReplicaMeta" title="telegram_bot_discussion.ext.pagination.replicas.page_meta.PageReplicaMeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageReplicaMeta</span></code></a></p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.query">
-<span class="sig-name descname"><span class="pre">query</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Any</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.query" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">query</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.query" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.page">
-<span class="sig-name descname"><span class="pre">page</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.page" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">page</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.page" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.page_button_class">
-<span class="sig-name descname"><span class="pre">page_button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../buttons/page_button.html#telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface" title="telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface"><span class="pre">PageButtonInterface</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.page_button_class" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">page_button_class</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code><span class="pre">[</span><a class="reference internal" href="../buttons/page_button.html#telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface" title="telegram_bot_discussion.ext.pagination.buttons.page_button_i.PageButtonInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageButtonInterface</span></code></a><span class="pre">]</span></em><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.page_button_class" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.as_reply">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_reply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CallbackContext</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.as_reply" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">as_reply</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/telegram_bot_discussion/ext/pagination/replicas/page.html#PageReplica.as_reply"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.pagination.replicas.page.PageReplica.as_reply" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> (<em>Update</em>)</p></li>
+<li><p><strong>context</strong> (<em>CallbackContext</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 

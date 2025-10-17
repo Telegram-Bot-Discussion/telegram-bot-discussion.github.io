@@ -48,15 +48,17 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/index.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/quick_start.html">Quick start</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">In short</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../logger/index.html">Logger</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../config/index.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../bot/index.html">Discussion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../button/index.html">Button</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../replica/index.html">Replica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../dialogue/index.html">Dialogue</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../functions/index.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../handlers/index.html">Handlers</a></li>
@@ -74,11 +76,15 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
 </ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../thanks/index.html">A words of thanks</a></li>
+</ul>
 <p class="caption" role="heading"><span class="caption-text">Links</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://github.com">GitHub Repo (examples)</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
 </ul>
 
         </div>
@@ -109,23 +115,46 @@
 <span id="help-command-functions"></span><h1>Help command functions<a class="headerlink" href="#module-telegram_bot_discussion.ext.command.commands_menu" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command.commands_menu.CommandsMenu">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command.commands_menu.</span></span><span class="sig-name descname"><span class="pre">CommandsMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><span class="pre">Command</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu" title="Link to this definition"></a></dt>
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.ext.command.commands_menu.</span></span><span class="sig-name descname"><span class="pre">CommandsMenu</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command/commands_menu.html#CommandsMenu"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>CommandsMenu help to create menu from commands.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>commands</strong> (<em>Sequence</em><em>[</em><em>Sequence</em><em>[</em><a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><em>Command</em></a><em>]</em><em>] </em><em>| </em><em>None</em>)</p>
+</dd>
+</dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.set_commands">
-<span class="sig-name descname"><span class="pre">set_commands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><span class="pre">Command</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu" title="telegram_bot_discussion.ext.command.commands_menu.CommandsMenu"><span class="pre">CommandsMenu</span></a></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.set_commands" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">set_commands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commands</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command/commands_menu.html#CommandsMenu.set_commands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.set_commands" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu" title="telegram_bot_discussion.ext.command.commands_menu.CommandsMenu"><code class="xref py py-class docutils literal notranslate"><span class="pre">CommandsMenu</span></code></a></span></p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>commands</strong> (<em>Sequence</em><em>[</em><em>Sequence</em><em>[</em><a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><em>Command</em></a><em>]</em><em>]</em>)</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.get_commands">
-<span class="sig-name descname"><span class="pre">get_commands</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><span class="pre">Command</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.get_commands" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">get_commands</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command/commands_menu.html#CommandsMenu.get_commands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.get_commands" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">Sequence</span></code>[<a class="reference internal" href="../../command/command.html#telegram_bot_discussion.command.command.Command" title="telegram_bot_discussion.command.command.Command"><code class="xref py py-class docutils literal notranslate"><span class="pre">Command</span></code></a>]]</span></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.as_keyboard">
-<span class="sig-name descname"><span class="pre">as_keyboard</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">ReplyKeyboardMarkup</span></span></span><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.as_keyboard" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-name descname"><span class="pre">as_keyboard</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../../../_modules/telegram_bot_discussion/ext/command/commands_menu.html#CommandsMenu.as_keyboard"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.ext.command.commands_menu.CommandsMenu.as_keyboard" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">ReplyKeyboardMarkup</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
 
 </dd></dl>
 

@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>telegram_bot_discussion.bot.bot &mdash; Telegram-Bot-Discussion  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+
+  
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Telegram-Bot-Discussion
+              <img src="../../../_static/discussion.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/install.html">How to install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about/quick_start.html">Quick start</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Docstrings</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/index.html">In short</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/logger/index.html">Logger</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/config/index.html">Config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/bot/index.html">Discussion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/button/index.html">Button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/command/index.html">Command</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/replica/index.html">Replica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/dialogue/index.html">Dialogue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/functions/index.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/handlers/index.html">Handlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docstrings/ext/index.html">Extended</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples &amp; Online-Demos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../examples/index.html">Examples</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Thanks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../thanks/index.html">A words of thanks</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/telegram-bot-discussion/">Python Package Index</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion">GitVerse Repo</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples">GitVerse Repo (usage examples)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Telegram-Bot-Discussion</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">telegram_bot_discussion.bot.bot</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for telegram_bot_discussion.bot.bot</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Union</span>
+
+
+<span class="kn">from</span> <span class="nn">telegram.ext</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">filters</span><span class="p">,</span>
+    <span class="n">Application</span><span class="p">,</span>
+    <span class="n">CallbackQueryHandler</span><span class="p">,</span>
+    <span class="n">ExtBot</span><span class="p">,</span>
+    <span class="n">MessageHandler</span><span class="p">,</span>
+    <span class="n">PollAnswerHandler</span><span class="p">,</span>
+    <span class="n">PollHandler</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">..bot.exceptions.buttons_handler_is_not_set</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ButtonsHandlerIsNotSet</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">..bot.exceptions.commands_handler_is_not_set</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">CommandsHandlerIsNotSet</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">..bot.exceptions.replicas_handler_is_not_set</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ReplicasHandlerIsNotSet</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<span class="kn">from</span> <span class="nn">..config</span> <span class="kn">import</span> <span class="n">Config</span>
+<span class="kn">from</span> <span class="nn">..constants.constants</span> <span class="kn">import</span> <span class="n">_DISCUSSION</span>
+<span class="kn">from</span> <span class="nn">..handlers.buttons_handler.buttons_handler</span> <span class="kn">import</span> <span class="n">ButtonsHandler</span>
+<span class="kn">from</span> <span class="nn">..handlers.commands_handler.commands_handler</span> <span class="kn">import</span> <span class="n">CommandsHandler</span>
+<span class="kn">from</span> <span class="nn">..handlers.replicas_handler.replicas_handler</span> <span class="kn">import</span> <span class="n">ReplicasHandler</span>
+<span class="kn">from</span> <span class="nn">..logger.logger_interface</span> <span class="kn">import</span> <span class="n">LoggerInterface</span>
+
+
+<div class="viewcode-block" id="ApplicationWasNotInit">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.ApplicationWasNotInit">[docs]</a>
+<span class="k">class</span> <span class="nc">ApplicationWasNotInit</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Exception raise when Telegram-bot application was not init in some reason (in the general case Telegram-bot application initialized automatically).&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">args</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="p">:</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;First of all it need to init Telegram-application, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;Telegram-application was not init&quot;</span></div>
+
+
+
+<div class="viewcode-block" id="Discussion">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion">[docs]</a>
+<span class="k">class</span> <span class="nc">Discussion</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Discussion` is main class of your Telegram-bot application.</span>
+
+<span class="sd">    It could be say that the `Discussion` is `Telegram`-bot.&quot;&quot;&quot;</span>
+
+    <span class="n">_application</span><span class="p">:</span> <span class="n">Application</span>
+    <span class="n">config</span><span class="p">:</span> <span class="n">Config</span>
+    <span class="n">_dialogues</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="n">_logger</span><span class="p">:</span> <span class="n">LoggerInterface</span>
+
+    <span class="n">_buttons_handler</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ButtonsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+    <span class="n">_commands_handler</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CommandsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+    <span class="n">_replicas_handler</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ReplicasHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="p">:</span> <span class="n">LoggerInterface</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">Config</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">config</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_logger</span> <span class="o">=</span> <span class="n">logger</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dialogues</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_buttons_handler</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_commands_handler</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_replicas_handler</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">init_application</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Discussion.get_application">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_application">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_application</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Application</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_application&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ApplicationWasNotInit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_application</span></div>
+
+
+<div class="viewcode-block" id="Discussion.bot">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.bot">[docs]</a>
+    <span class="k">def</span> <span class="nf">bot</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ExtBot</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns:</span>
+<span class="sd">            ExtBot: native Telegram-bot object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">bot</span></div>
+
+
+<div class="viewcode-block" id="Discussion.get_dialogues">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_dialogues">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_dialogues</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Dialogues structure `Dict[int, Iterable]` - is main idea of `telegram-bot-discussion`.</span>
+
+<span class="sd">        It is a dictionary collection of pairs of Bot User ID and the next stage of their dialogue.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dialogues</span></div>
+
+
+<div class="viewcode-block" id="Discussion.get_logger">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_logger">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_logger</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LoggerInterface</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_logger</span></div>
+
+
+<div class="viewcode-block" id="Discussion.init_application">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.init_application">[docs]</a>
+    <span class="k">def</span> <span class="nf">init_application</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">read_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">get_updates_read_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">write_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">get_updates_write_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">pool_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">get_updates_pool_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">connect_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+        <span class="n">get_updates_connect_timeout</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;init_application()&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_application</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">Application</span><span class="o">.</span><span class="n">builder</span><span class="p">()</span>
+            <span class="o">.</span><span class="n">token</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">token</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">read_timeout</span><span class="p">(</span><span class="n">read_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">get_updates_read_timeout</span><span class="p">(</span><span class="n">get_updates_read_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">write_timeout</span><span class="p">(</span><span class="n">write_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">get_updates_write_timeout</span><span class="p">(</span><span class="n">get_updates_write_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">pool_timeout</span><span class="p">(</span><span class="n">pool_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">get_updates_pool_timeout</span><span class="p">(</span><span class="n">get_updates_pool_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">connect_timeout</span><span class="p">(</span><span class="n">connect_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">get_updates_connect_timeout</span><span class="p">(</span><span class="n">get_updates_connect_timeout</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+        <span class="p">)</span>
+        <span class="nb">setattr</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_application</span><span class="p">,</span>
+            <span class="n">_DISCUSSION</span><span class="p">,</span>
+            <span class="bp">self</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+    <span class="k">def</span> <span class="nf">_reset_handlers</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">handlers</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="n">commands_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CommandsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_commands_handler</span>
+        <span class="k">if</span> <span class="n">commands_handler_exists</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">add_handler</span><span class="p">(</span>
+                <span class="n">MessageHandler</span><span class="p">(</span>
+                    <span class="n">filters</span><span class="o">.</span><span class="n">COMMAND</span><span class="p">,</span>
+                    <span class="n">commands_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="n">buttons_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ButtonsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buttons_handler</span>
+        <span class="k">if</span> <span class="n">buttons_handler_exists</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">add_handler</span><span class="p">(</span>
+                <span class="n">CallbackQueryHandler</span><span class="p">(</span>
+                    <span class="n">buttons_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="n">replicas_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ReplicasHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_replicas_handler</span>
+        <span class="k">if</span> <span class="n">replicas_handler_exists</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">add_handler</span><span class="p">(</span>
+                <span class="n">MessageHandler</span><span class="p">(</span>
+                    <span class="n">filters</span><span class="o">.</span><span class="n">ALL</span><span class="p">,</span>
+                    <span class="n">replicas_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">add_handler</span><span class="p">(</span>
+                <span class="n">PollAnswerHandler</span><span class="p">(</span>
+                    <span class="n">replicas_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">add_handler</span><span class="p">(</span>
+                <span class="n">PollHandler</span><span class="p">(</span>
+                    <span class="n">replicas_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+<div class="viewcode-block" id="Discussion.set_commands_handler">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.set_commands_handler">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_commands_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commands_handler</span><span class="p">:</span> <span class="n">CommandsHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup COMMAND-handler&quot;</span><span class="p">)</span>
+        <span class="n">commands_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CommandsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_commands_handler&quot;</span><span class="p">,</span> <span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">commands_handler_exists</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">remove_handler</span><span class="p">(</span>
+                <span class="n">MessageHandler</span><span class="p">(</span>
+                    <span class="n">filters</span><span class="o">.</span><span class="n">COMMAND</span><span class="p">,</span>
+                    <span class="n">commands_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_commands_handler</span> <span class="o">=</span> <span class="n">commands_handler</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reset_handlers</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+<div class="viewcode-block" id="Discussion.set_replicas_handler">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.set_replicas_handler">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_replicas_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">replicas_handler</span><span class="p">:</span> <span class="n">ReplicasHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup REPLICAS-handler&quot;</span><span class="p">)</span>
+        <span class="n">replicas_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ReplicasHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_replicas_handler&quot;</span><span class="p">,</span> <span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">replicas_handler_exists</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">remove_handler</span><span class="p">(</span>
+                <span class="n">MessageHandler</span><span class="p">(</span>
+                    <span class="n">filters</span><span class="o">.</span><span class="n">ALL</span><span class="p">,</span>
+                    <span class="n">replicas_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">remove_handler</span><span class="p">(</span>
+                <span class="n">PollAnswerHandler</span><span class="p">(</span>
+                    <span class="n">replicas_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">remove_handler</span><span class="p">(</span>
+                <span class="n">PollHandler</span><span class="p">(</span>
+                    <span class="n">replicas_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_replicas_handler</span> <span class="o">=</span> <span class="n">replicas_handler</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reset_handlers</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+<div class="viewcode-block" id="Discussion.set_buttons_handler">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.set_buttons_handler">[docs]</a>
+    <span class="k">def</span> <span class="nf">set_buttons_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">buttons_handler</span><span class="p">:</span> <span class="n">ButtonsHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup BUTTONS-handler&quot;</span><span class="p">)</span>
+        <span class="n">buttons_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ButtonsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_buttons_handler&quot;</span><span class="p">,</span> <span class="kc">None</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">buttons_handler_exists</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">remove_handler</span><span class="p">(</span>
+                <span class="n">CallbackQueryHandler</span><span class="p">(</span>
+                    <span class="n">buttons_handler_exists</span><span class="o">.</span><span class="n">handle</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_buttons_handler</span> <span class="o">=</span> <span class="n">buttons_handler</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reset_handlers</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+<div class="viewcode-block" id="Discussion.get_buttons_handler">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_buttons_handler">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_buttons_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ButtonsHandler</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buttons_handler</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ButtonsHandlerIsNotSet</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buttons_handler</span></div>
+
+
+<div class="viewcode-block" id="Discussion.get_commands_handler">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_commands_handler">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_commands_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">CommandsHandler</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_commands_handler</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CommandsHandlerIsNotSet</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_commands_handler</span></div>
+
+
+<div class="viewcode-block" id="Discussion.get_replicas_handler">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_replicas_handler">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_replicas_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ReplicasHandler</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_replicas_handler</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ReplicasHandlerIsNotSet</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_replicas_handler</span></div>
+
+
+<div class="viewcode-block" id="Discussion.start">
+<a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.start">[docs]</a>
+    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;run_polling()&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">run_polling</span><span class="p">()</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, ILYA.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
