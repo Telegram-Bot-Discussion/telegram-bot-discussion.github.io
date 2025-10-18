@@ -1,7 +1,7 @@
 Handlers
 ========
 
-By focusing on the most commonly requested types of Telegram-bot events, I divided its capture into three routes:
+By focusing on the most commonly requested types of `Telegram-bot`` events, I divided its capture into three routes:
 
 - Buttons-handler;
 - Commands-handler;

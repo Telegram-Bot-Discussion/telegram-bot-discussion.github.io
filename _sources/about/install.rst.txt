@@ -22,7 +22,7 @@ Installation
 
 .. attention::
 
-   Package ``python-telegram-bot`` need to be installed:
+   Package `python-telegram-bot` need to be installed:
 
     .. code-block:: bash
 

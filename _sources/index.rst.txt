@@ -1,7 +1,7 @@
 Documentation
 =============
 
-`Telegram-Bot-Discussion` is Python-framework for `Telegram-bot`` making.
+`Telegram-Bot-Discussion` is Python-framework for `Telegram-bot` making.
 
 Main idea of `Telegram-Bot-Discussion` is simplification of dialogues functions which save context between `Telegram-user` and `Telegram-bot` in requests-responses flow. 
 

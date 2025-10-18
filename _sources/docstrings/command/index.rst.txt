@@ -1,7 +1,7 @@
 Command
 =======
 
-`Command` is base class for build actions of Telegram-bot command (like `/command``).
+`Command` is base class for build actions of `Telegram-bot` command (like `/start`).
 
 .. toctree::
    :hidden:

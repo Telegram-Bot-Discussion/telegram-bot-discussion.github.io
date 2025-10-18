@@ -3,22 +3,22 @@ Examples
 
 Here demo of `Telegram-Bot-Discussion` https://pypi.org/project/telegram-bot-discussion/ framework (abbreviated -  `TBD`) usage (ordered by complexity) and online-demos for some one (which frontend part can be demonstrate effectively):
 
-* `"Hello World Bot"` - say "Hello World" for any entered Telegram-user replica (try this by bot demo  `@tbd_hello_world_bot <https://t.me/tbd_hello_world_bot>`_).
+* `"Hello World Bot"` - say "Hello World" for any entered `Telegram-user` replica (try this by bot demo  `@tbd_hello_world_bot <https://t.me/tbd_hello_world_bot>`_).
 
 
-* `"Echo Bot"` - get back any entered data to Telegram-user (try this by bot demo `@tbd_echo_bot <https://t.me/tbd_echo_bot>`_).
+* `"Echo Bot"` - get back any entered data to `Telegram-user` (try this by bot demo `@tbd_echo_bot <https://t.me/tbd_echo_bot>`_).
 
 
-* `"Raw Present Bot"` - show raw Telegram-protocol message-data (try this by bot demo `@tbd_raw_present_bot <https://t.me/tbd_raw_present_bot>`_).
+* `"Raw Present Bot"` - show raw data of `Telegram-message` (try this by bot demo `@tbd_raw_present_bot <https://t.me/tbd_raw_present_bot>`_).
 
 
-* `"Calc Bot"` - show simple `Dialogue`-function for step-by-step values getting from Telegram-user and calc result at the end (try this by bot demo `@tbd_calc_bot <https://t.me/tbd_calc_bot>`_). It demonstrate fix typing for potential calc operations.
+* `"Calc Bot"` - show simple `Dialogue`-function for step-by-step values getting from `Telegram-user` and calc result at the end (try this by bot demo `@tbd_calc_bot <https://t.me/tbd_calc_bot>`_). It demonstrate fix typing for potential calc operations.
 
 
-* `"Simple Dialogue Bot"` - show `Dialogue`-function for make Telegram-user survey and show it result(try this by bot demo `@tbd_simple_dialogue_bot <https://t.me/tbd_simple_dialogue_bot>`_). 
+* `"Simple Dialogue Bot"` - show `Dialogue`-function for make `Telegram-user` survey and show it result(try this by bot demo `@tbd_simple_dialogue_bot <https://t.me/tbd_simple_dialogue_bot>`_). 
 
 
-* `"Survey Bot"` - show `Dialogue`-function for make Telegram-user survey with fixed answers variants and stored results (try this by bot demo `@tbd_survey_bot <https://t.me/tbd_survey_bot>`_). It demonstrate the ability to create Telegram-bots for arbitrary questionnaires.
+* `"Survey Bot"` - show `Dialogue`-function for make `Telegram-user` survey with fixed answers variants and stored results (try this by bot demo `@tbd_survey_bot <https://t.me/tbd_survey_bot>`_). It demonstrate the ability to create `Telegram-bots` for arbitrary questionnaires.
 
 
 * `"Quiz Bot"` - show looper `Dialogue`-function with random quiz (native `Telegram-quiz`) questions and user answer statistics (try this by bot demo `@tbd_quiz_bot <https://t.me/tbd_quiz_bot>`_). 
