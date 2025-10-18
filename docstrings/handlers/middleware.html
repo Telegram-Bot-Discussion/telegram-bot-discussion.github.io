@@ -115,9 +115,24 @@
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.middleware.base_middleware.BaseMiddleware">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.handlers.middleware.base_middleware.</span></span><span class="sig-name descname"><span class="pre">BaseMiddleware</span></span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/middleware/base_middleware.html#BaseMiddleware"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.middleware.base_middleware.BaseMiddleware" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>BaseMiddleware is base class for catch data at start of <cite>handle()</cite>-method
-in <cite>ButtonsHandler</cite>, <cite>CommandsHandler</cite>, <cite>ReplicasHandler</cite> work (for logging events, detect DDoS-activity and etc.).</p>
-<p>Recommended use <cite>Middleware</cite>-class as mixin in your <cite>ButtonsHandler</cite>, <cite>CommandsHandler</cite>, <cite>ReplicasHandler</cite>.</p>
+<dl>
+<dt>BaseMiddleware is base class for catch data at start of <cite>handle()</cite>-method</dt><dd><p>in <cite>ButtonsHandler</cite>, <cite>CommandsHandler</cite>, <cite>ReplicasHandler</cite> work (for logging events, detect DDoS-activity and etc.).</p>
+<p>Recommended use <cite>Middleware</cite>-class as mixin-approach in your <cite>ButtonsHandler</cite>, <cite>CommandsHandler</cite>, <cite>ReplicasHandler</cite>.</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RemixMiddleware</span><span class="p">(</span><span class="n">BaseMiddleware</span><span class="p">):</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">middleware</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">,</span>
+        <span class="n">context</span><span class="p">:</span> <span class="n">CallbackContext</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">Update</span><span class="p">,</span> <span class="n">CallbackContext</span><span class="p">],</span> <span class="kc">None</span><span class="p">]:</span>
+    <span class="o">...</span>
+
+<span class="k">class</span> <span class="nc">YourReplicasHandler</span><span class="p">(</span><span class="n">RemixMiddleware</span><span class="p">,</span> <span class="n">ReplicasHandler</span><span class="p">):</span>
+   <span class="o">...</span>
+</pre></div>
+</div>
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.handlers.middleware.base_middleware.BaseMiddleware.middleware">
 <em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">middleware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/handlers/middleware/base_middleware.html#BaseMiddleware.middleware"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.handlers.middleware.base_middleware.BaseMiddleware.middleware" title="Link to this definition"></a></dt>

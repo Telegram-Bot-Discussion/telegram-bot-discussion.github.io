@@ -119,7 +119,7 @@
 <p><cite>CoderInterface</cite> is interface for class, which serialize <cite>Button</cite>-<cite>Params</cite> values for storing them at <cite>Button</cite> and deserialize data from callback query to special <cite>Button</cite>-<cite>Params</cite> structure.</p>
 <p>In the box <cite>Telegram-Bot-Discussion</cite> contains two realizations of <cite>CoderInterface</cite>:</p>
 <ul class="simple">
-<li><p>store callback query data within <cite>Button</cite> as callback action <cite>Params</cite> (with limited by native Telegram protocol data length (64 bytes) and variables types - int, string, because no need more for more tasks).</p></li>
+<li><p>store callback query data within <cite>Button</cite> as callback action <cite>Params</cite> (with limited by native <cite>Telegram</cite> protocol data length (64 bytes) and variables types - int, string, because no need more for more tasks).</p></li>
 <li><p>store unique identity of callback action <cite>Params</cite>, which are loaded when user click <cite>Button</cite> (no any limits of callback data length and variables types, but external storage must work independently).</p></li>
 </ul>
 <p>You can write self <cite>Coder</cite>-class based on <cite>Pickle</cite>, <cite>ProtoBuf</cite>, <cite>FlatBuffers</cite> and etc. I stopped on the byte-separated values format as more visual and clear.</p>

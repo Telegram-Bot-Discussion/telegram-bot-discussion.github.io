@@ -136,7 +136,7 @@
 <div class="viewcode-block" id="ApplicationWasNotInit">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.ApplicationWasNotInit">[docs]</a>
 <span class="k">class</span> <span class="nc">ApplicationWasNotInit</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Exception raise when Telegram-bot application was not init in some reason (in the general case Telegram-bot application initialized automatically).&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Exception raise when `Telegram-bot` application was not init in some reason (in the general case `Telegram-bot` application initialized automatically).&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="kc">None</span>
@@ -145,17 +145,19 @@
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="p">:</span>
-            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;First of all it need to init Telegram-application, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="si">}</span><span class="s2">&quot;</span>
-        <span class="k">return</span> <span class="s2">&quot;Telegram-application was not init&quot;</span></div>
+            <span class="k">return</span> <span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;First of all it need to init Telegram-bot application, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">message</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="s2">&quot;Telegram-bot application was not init&quot;</span></div>
 
 
 
 <div class="viewcode-block" id="Discussion">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion">[docs]</a>
 <span class="k">class</span> <span class="nc">Discussion</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Discussion` is main class of your Telegram-bot application.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Discussion` is main class of your `Telegram-bot` application.</span>
 
-<span class="sd">    It could be say that the `Discussion` is `Telegram`-bot.&quot;&quot;&quot;</span>
+<span class="sd">    It could be say that the `Discussion` is `Telegram-bot`.&quot;&quot;&quot;</span>
 
     <span class="n">_application</span><span class="p">:</span> <span class="n">Application</span>
     <span class="n">config</span><span class="p">:</span> <span class="n">Config</span>
@@ -188,7 +190,7 @@
     <span class="k">def</span> <span class="nf">bot</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">ExtBot</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Returns:</span>
-<span class="sd">            ExtBot: native Telegram-bot object.</span>
+<span class="sd">            ExtBot: native `Telegram-bot` object.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">bot</span></div>
 
@@ -197,9 +199,9 @@
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_dialogues">[docs]</a>
     <span class="k">def</span> <span class="nf">get_dialogues</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Dialogues structure `Dict[int, Iterable]` - is main idea of `telegram-bot-discussion`.</span>
+<span class="sd">        Dialogues structure `Dict[int, Iterable]` - is one of main `telegram-bot-discussion` ideas.</span>
 
-<span class="sd">        It is a dictionary collection of pairs of Bot User ID and the next stage of their dialogue.</span>
+<span class="sd">        It is a dictionary collection of pairs of `Telegram-user` ID and the next stage of `Telegram-bot` dialogue.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dialogues</span></div>
@@ -286,7 +288,7 @@
 <div class="viewcode-block" id="Discussion.set_commands_handler">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.set_commands_handler">[docs]</a>
     <span class="k">def</span> <span class="nf">set_commands_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">commands_handler</span><span class="p">:</span> <span class="n">CommandsHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup COMMAND-handler&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup commands handler&quot;</span><span class="p">)</span>
         <span class="n">commands_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CommandsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_commands_handler&quot;</span><span class="p">,</span> <span class="kc">None</span>
         <span class="p">)</span>
@@ -305,7 +307,7 @@
 <div class="viewcode-block" id="Discussion.set_replicas_handler">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.set_replicas_handler">[docs]</a>
     <span class="k">def</span> <span class="nf">set_replicas_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">replicas_handler</span><span class="p">:</span> <span class="n">ReplicasHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup REPLICAS-handler&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup replicas handler&quot;</span><span class="p">)</span>
         <span class="n">replicas_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ReplicasHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_replicas_handler&quot;</span><span class="p">,</span> <span class="kc">None</span>
         <span class="p">)</span>
@@ -334,7 +336,7 @@
 <div class="viewcode-block" id="Discussion.set_buttons_handler">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.set_buttons_handler">[docs]</a>
     <span class="k">def</span> <span class="nf">set_buttons_handler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">buttons_handler</span><span class="p">:</span> <span class="n">ButtonsHandler</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Discussion&quot;</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup BUTTONS-handler&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Setup buttons handler&quot;</span><span class="p">)</span>
         <span class="n">buttons_handler_exists</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">ButtonsHandler</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span>
             <span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;_buttons_handler&quot;</span><span class="p">,</span> <span class="kc">None</span>
         <span class="p">)</span>
@@ -376,7 +378,7 @@
 <div class="viewcode-block" id="Discussion.start">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.start">[docs]</a>
     <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;run_polling()&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;start()&quot;</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">get_application</span><span class="p">()</span><span class="o">.</span><span class="n">run_polling</span><span class="p">()</span></div>
 </div>
 

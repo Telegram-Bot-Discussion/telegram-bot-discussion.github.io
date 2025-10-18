@@ -125,7 +125,7 @@
 <div class="viewcode-block" id="get_from_user">
 <a class="viewcode-back" href="../../../docstrings/functions/index.html#telegram_bot_discussion.functions.from_user.get_from_user">[docs]</a>
 <span class="k">def</span> <span class="nf">get_from_user</span><span class="p">(</span><span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">User</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;get_from_user() try fetch `User` (from `update.message`, `update.callback_query`) of initiator (it can be User, Chat, Channel), which appeal to Telegram-bot.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;get_from_user() try fetch `User` (from `update.message`, `update.callback_query`) of initiator (it can be User, Chat, Channel), which appeal to `Telegram-bot`.</span>
 
 <span class="sd">    :raises FromUserWasNotFetched: When initiator was not detected.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -144,7 +144,7 @@
     <span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">,</span>
     <span class="n">context</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CallbackContext</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;get_from_id() try fetch `user_id` (from `update.message`, `update.callback_query` or `context`) of initiator (it can be User, Chat, Channel), which appeal to Telegram-bot.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;get_from_id() try fetch `user_id` (from `update.message`, `update.callback_query` or `context`) of initiator (it can be `User`, `Chat`, `Channel`), which appeal to `Telegram-bot`.</span>
 
 <span class="sd">    :raises FromUserWasNotFetched: When initiator was not detected.</span>
 <span class="sd">    &quot;&quot;&quot;</span>

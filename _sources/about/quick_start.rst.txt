@@ -1,12 +1,12 @@
 Quick start
 ==============
 
-In short, the key entities of the framework are presented below.:
+In short, the key entities of the `Telegram-Bot-Discussion` are presented below.:
 
-* `Replica` is parametrized presentation class of `Telegram Message`.
+* `Replica` is parametrized presentation class of `Telegram-message`.
 * `Dialog` between `Telegram-bot` and `Telegram-user` is an yielded iterator of `Replicas`.
 * `Discussion` contains a registry of `Dialog`-state for each `Telegram-user`.
 * For every `Telegram-user` request `Discussion` iterate by `Dialog` if this request is valid for current `Dialog`.
-* If `Replica` contains `Button` the value in `Button` is coded and signed with `Coder`.
-* `Discussion` check `Telegram-user` compliance of coming data (by digital signature) when `Telegram-user` click `Button`.
-* All `Telegram-user` requests are separated to `Hendlers` of `Buttons` (named `ButtonsHandler`), `Commands` (named `CommandsHandler`) and other input (named `ReplicasHandler`).
+* If `Replica` contains `Button` the value in `Telegram-button` is coded and signed with `Coder`.
+* `Discussion` check `Telegram-user` compliance of coming data (by digital signature) when `Telegram-user` click `Telegram-button`.
+* All `Telegram-user` requests are separated by `Handlers` of `Buttons` (named `ButtonsHandler`), `Commands` (named `CommandsHandler`) and other input (named `ReplicasHandler`).

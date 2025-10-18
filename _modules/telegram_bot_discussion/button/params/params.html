@@ -117,7 +117,7 @@
 <a class="viewcode-back" href="../../../../docstrings/button/params.html#telegram_bot_discussion.button.params.params.Params">[docs]</a>
 <span class="k">class</span> <span class="nc">Params</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Telegram-button callback query store some data. When User click button this data is return to bot.</span>
+<span class="sd">    `Telegram-button` callback query store some data. When User click button this data is return to bot.</span>
 
 <span class="sd">    So `Params` formalize storing more then one value in callback query and fetching after button click.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -147,12 +147,12 @@
         <span class="n">coder</span><span class="p">:</span> <span class="n">CoderInterface</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Self</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Fetch data from Telegram-button callback query into special structure named `Params`.</span>
+<span class="sd">        Fetch data from `Telegram-button` callback query into special structure named `Params`.</span>
 
-<span class="sd">        :param callback_query: Telegram-button callback query data</span>
-<span class="sd">        :param coder: algorithm of serializing and deserializing stored in Telegram-button data</span>
-<span class="sd">        :raises CallbackQueryIsNone: when Telegram-button has no callback query</span>
-<span class="sd">        :raises CallbackQueryDataIsNone: when Telegram-button has empty callback query</span>
+<span class="sd">        :param callback_query: `Telegram-button` callback query data</span>
+<span class="sd">        :param coder: algorithm of serializing and deserializing stored in `Telegram-button` data</span>
+<span class="sd">        :raises CallbackQueryIsNone: when `Telegram-button` has no callback query</span>
+<span class="sd">        :raises CallbackQueryDataIsNone: when `Telegram-button` has empty callback query</span>
 
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">callback_query</span><span class="p">:</span>

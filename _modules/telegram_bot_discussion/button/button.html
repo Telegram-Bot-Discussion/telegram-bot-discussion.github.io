@@ -118,7 +118,7 @@
 <div class="viewcode-block" id="Button">
 <a class="viewcode-back" href="../../../docstrings/button/button.html#telegram_bot_discussion.button.button.Button">[docs]</a>
 <span class="k">class</span> <span class="nc">Button</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Button` is base class for create Telegram-button.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Button` is base class for create `Telegram-button`.&quot;&quot;&quot;</span>
 
     <span class="n">_title</span><span class="p">:</span> <span class="nb">str</span>
 
@@ -184,7 +184,7 @@
 <div class="viewcode-block" id="Button.set_title">
 <a class="viewcode-back" href="../../../docstrings/button/button.html#telegram_bot_discussion.button.button.Button.set_title">[docs]</a>
     <span class="k">def</span> <span class="nf">set_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Button&quot;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Method for force set Telegram-button title&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Method for force set `Telegram-button` title&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_title</span> <span class="o">=</span> <span class="n">title</span>
         <span class="k">return</span> <span class="bp">self</span></div>
 
@@ -196,7 +196,7 @@
         <span class="n">other</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="s2">&quot;Button&quot;</span><span class="p">],</span> <span class="n">InlineKeyboardButton</span><span class="p">],</span>
         <span class="n">callback_data_coder</span><span class="p">:</span> <span class="n">CoderInterface</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Method for compare button-object with other button-object and native Telegram-button (InlineKeyboardButton)&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Method for compare `Button` object with other `Button` object or native `Telegram-button` (i.e. `InlineKeyboardButton`)&quot;&quot;&quot;</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">other</span><span class="p">,</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="n">InlineKeyboardButton</span><span class="p">)):</span>
             <span class="k">return</span> <span class="kc">False</span>
@@ -225,7 +225,7 @@
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">callback_data_coder</span><span class="p">:</span> <span class="n">CoderInterface</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">InlineKeyboardButton</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Method for create Telegram-button&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Method for create `Telegram-button`&quot;&quot;&quot;</span>
 
         <span class="n">serialized_data</span> <span class="o">=</span> <span class="n">callback_data_coder</span><span class="o">.</span><span class="n">serialize</span><span class="p">(</span>
             <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">params</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span>

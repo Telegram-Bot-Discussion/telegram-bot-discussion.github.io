@@ -1,7 +1,7 @@
 Extended
 ========
 
-The most frequently used in the developed `Telegram`-bots implementations of interfaces or individual functions were combined and included as an integral part of the original package `Telegram-Bot-Discussion`. 
+The most frequently used in the developed `Telegram-bots` implementations of interfaces or individual functions were combined and included as an integral part of the original package `Telegram-Bot-Discussion`. 
 
 One can argue for a long time about the correctness of this approach but let's accept it `AS IS`.
 

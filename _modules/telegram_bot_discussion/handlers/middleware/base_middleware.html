@@ -112,9 +112,26 @@
 <a class="viewcode-back" href="../../../../docstrings/handlers/middleware.html#telegram_bot_discussion.handlers.middleware.base_middleware.BaseMiddleware">[docs]</a>
 <span class="k">class</span> <span class="nc">BaseMiddleware</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;BaseMiddleware is base class for catch data at start of `handle()`-method</span>
-<span class="sd">    in `ButtonsHandler`, `CommandsHandler`, `ReplicasHandler` work (for logging events, detect DDoS-activity and etc.).</span>
+<span class="sd">        in `ButtonsHandler`, `CommandsHandler`, `ReplicasHandler` work (for logging events, detect DDoS-activity and etc.).</span>
 
-<span class="sd">    Recommended use `Middleware`-class as mixin in your `ButtonsHandler`, `CommandsHandler`, `ReplicasHandler`.</span>
+<span class="sd">        Recommended use `Middleware`-class as mixin-approach in your `ButtonsHandler`, `CommandsHandler`, `ReplicasHandler`.</span>
+
+<span class="sd">    Example:</span>
+
+<span class="sd">    .. highlight:: python</span>
+<span class="sd">    .. code-block:: python</span>
+
+<span class="sd">        class RemixMiddleware(BaseMiddleware):</span>
+<span class="sd">            async def middleware(</span>
+<span class="sd">                self,</span>
+<span class="sd">                update: Update,</span>
+<span class="sd">                context: CallbackContext,</span>
+<span class="sd">            ) -&gt; Union[Tuple[Update, CallbackContext], None]:</span>
+<span class="sd">            ...</span>
+
+<span class="sd">        class YourReplicasHandler(RemixMiddleware, ReplicasHandler):</span>
+<span class="sd">           ...</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="BaseMiddleware.middleware">

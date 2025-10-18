@@ -1,7 +1,7 @@
 In short
 ==================================
 
-This docstring-section based on the comments in the `telegram-bot-discussion` source code. 
+This docstring-section based on the special comments in the `Telegram-Bot-Discussion` source code. 
 
 Theses about classes.
 
@@ -9,9 +9,9 @@ Theses about classes.
 
 `Dialogue` is class for construct yielded function like requests-responses flow between `Telegram-user` and `Telegram-bot`.
 
-`Replica` is class for construct `Dialogue` input-output items. In the box exist common replicas for differ discussions and dialogues: `EmptyReplica` (nothing reply), `AutoReply` (reply standard response for request), `CleanReplica` (force clear reply buttons), `NoNeedReactionReplica` (nothing reply, just proxy other `Replica` and go to next `Replica` without wait `Telegram-user` request), `StopReplica` (`Replica` for `Dialogue` stop). 
+`Replica` is class for present `Telegram-message`. In the box common `Replicas` exist for differ discussions and dialogues: `EmptyReplica` (nothing to reply), `AutoReply` (reply standard response for request), `CleanReplica` (force clean text-reply buttons), `NoNeedReactionReplica` (nothing reply, just proxy other `Replica` and go to next `Replica` without wait `Telegram-user` action), `StopReplica` (`Replica` for `Dialogue` stop). 
     
-`Button` is base class for create `Telegram-bot button`.
+`Button` is base class for create `Telegram-button` of `Telegram-bot`.
 
 `ButtonMeta` is base help class for auto create meta information of `Button` (name, title, action for handle).
 
@@ -21,7 +21,7 @@ Theses about classes.
 
 `CoderInterface` is interface for serializers of `Params` values which stored in `Buttons`.
 
-`Command` is base class for implementation handler of `Telegram-bot command`` (like `/command`).
+`Command` is base class for implementation handler of `Telegram-command` of `Telegram-bot` (like `/start`).
 
 `CommandMeta` is base help class for auto create meta information of `Command` (name, title, action for handle).
 
@@ -31,12 +31,12 @@ Theses about classes.
 
 `Config` is base class for config of `Discussion`.
 
-`ButtonsHandler` is base class for handing `Telegram-bot buttons` clicks.
+`ButtonsHandler` is base class for handing `Buttons` clicks.
 
-`CommandsHandler` is base class for handing `Telegram-bot commands` calls.
+`CommandsHandler` is base class for handing `Commands` calls.
 
 `ReplicasHandler` is base class for handing `Telegram-bot` input data updates from `Telegram-user`.
     
-`Middleware` is base class for catch data at start of `handle()`-method in `ButtonsHandler`, `CommandsHandler`, `ReplicasHandler` work (for logging events, detect DDoS-activity and etc.).
+`Middleware` is base class for catch data at start of `handle`-method in `ButtonsHandler`, `CommandsHandler`, `ReplicasHandler` (for example: logging events, detect DDoS-activity and etc.).
 
 `Logger` is base class for logging activity in `Discussion`.

@@ -118,20 +118,22 @@
 <span class="k">class</span> <span class="nc">Contextual</span><span class="p">(</span><span class="n">Generic</span><span class="p">[</span><span class="n">T</span><span class="p">]):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;`Contextual`-generic help fetch your `Discussion` inheritance from context.</span>
 
+<span class="sd">    Example:</span>
+
 <span class="sd">    .. highlight:: python</span>
 <span class="sd">    .. code-block:: python</span>
 
 <span class="sd">        // It is your bot</span>
-<span class="sd">        class ChildBotOfDiscussion(Discussion):</span>
-<span class="sd">            child_filed: str = &quot;child field&quot;</span>
+<span class="sd">        class YourBot(Discussion):</span>
+<span class="sd">            additional_filed: str</span>
 <span class="sd">            ...</span>
 
-<span class="sd">        // Everywhere where you need (dialogues, handlers, middlewares)</span>
+<span class="sd">        // Everywhere where you need (Dialogues, Handlers, Middlewares)</span>
 <span class="sd">        // get your Telegram-bot properties (like config, params, additional methods and etc.)</span>
 <span class="sd">        // use this construction</span>
 
-<span class="sd">        discussion: ChildBotOfDiscussion = Contextual[ChildBotOfDiscussion](context)()</span>
-<span class="sd">        print(discussion.child_filed)</span>
+<span class="sd">        your_discussion_bot: YourBot = Contextual[YourBot](context)()</span>
+<span class="sd">        print(your_discussion_bot.child_filed)</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -158,7 +160,7 @@
 <span class="sd">        .. highlight:: python</span>
 <span class="sd">        .. code-block:: python</span>
 
-<span class="sd">            discussion: ChildBotOfDiscussion = Contextual[ChildBotOfDiscussion](context)()</span>
+<span class="sd">            your_discussion_bot: YourBot = Contextual[YourBot](context)()</span>
 
 <span class="sd">        Raises:</span>
 <span class="sd">            ContextObjectIsNotDiscussion: when fetched object is not detected as Discussion-child.</span>

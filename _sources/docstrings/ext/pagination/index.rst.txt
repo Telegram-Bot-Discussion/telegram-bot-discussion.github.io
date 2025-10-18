@@ -1,7 +1,7 @@
 Pagination
 ----------
 
-This class-set help to realize data pagination.
+This set of classes help to realize data pagination.
 
 .. toctree::
    :hidden:

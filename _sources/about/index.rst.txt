@@ -18,7 +18,7 @@ During the process of creating Telegram bots, interesting questions began to ari
    
 And the main question:
 
-   - **How can I share my experience and knowledge of building `Telegram-bots` with others developers?**
+   - **How can I share my experience and knowledge of building Telegram-bots for others developers?**
 
 The solution is to create a constructor that allows the developer to focus on their business idea and achieve a working result quickly and efficiently.
 

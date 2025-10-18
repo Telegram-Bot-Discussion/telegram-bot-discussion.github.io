@@ -1,7 +1,7 @@
 Coders
 ----------------------------------
 
-Examples of :doc:`CoderInterface <../../button/coder_interface>` realization, which help to serialize and deserialize stored into Telegram-button data (`telegram.CallbackQuery`).
+Examples of :doc:`CoderInterface <../../button/coder_interface>` realization, which help to serialize and deserialize stored into `Telegram-button` data (`telegram.CallbackQuery`).
 
 .. toctree::
    :hidden:
