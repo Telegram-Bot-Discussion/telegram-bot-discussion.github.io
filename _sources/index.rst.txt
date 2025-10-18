@@ -50,7 +50,7 @@ Developer in its `Discussion` just construct `Dialogue` logic by `Replicas` sequ
    :caption: Links
 
    Python Package Index <https://pypi.org/project/telegram-bot-discussion/>
-   GitVerse Repo <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion>
-   GitVerse Repo (usage examples) <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>
+   GitVerse Repository <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion>
+   GitVerse Repository of examples <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>
    Telegram channel @tg_bot_discussion <https://t.me/tg_bot_discussion>
    
