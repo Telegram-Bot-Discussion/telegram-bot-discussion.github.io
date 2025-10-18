@@ -123,8 +123,8 @@
 <span class="kn">from</span> <span class="nn">...functions.chat_id</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">ChatIdWasNotFetched</span><span class="p">,</span>
 <span class="p">)</span>
-<span class="kn">from</span> <span class="nn">...functions.from_user</span> <span class="kn">import</span> <span class="p">(</span>
-    <span class="n">FromUserWasNotFetched</span><span class="p">,</span>
+<span class="kn">from</span> <span class="nn">...functions.from_id</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">FromIdWasNotFetched</span><span class="p">,</span>
 <span class="p">)</span>
 <span class="kn">from</span> <span class="nn">...logger.logger_interface</span> <span class="kn">import</span> <span class="n">LoggerInterface</span>
 <span class="kn">from</span> <span class="nn">.exceptions.access_deny</span> <span class="kn">import</span> <span class="p">(</span>
@@ -213,7 +213,7 @@
                     <span class="n">update</span><span class="p">,</span>
                     <span class="n">context</span><span class="p">,</span>
                 <span class="p">)</span>
-        <span class="k">except</span> <span class="n">FromUserWasNotFetched</span> <span class="k">as</span> <span class="n">_</span><span class="p">:</span>
+        <span class="k">except</span> <span class="n">FromIdWasNotFetched</span> <span class="k">as</span> <span class="n">_</span><span class="p">:</span>
             <span class="n">discussion</span><span class="o">.</span><span class="n">get_logger</span><span class="p">()</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;from_id does not exist&quot;</span><span class="p">)</span>
             <span class="k">try</span><span class="p">:</span>
                 <span class="n">chat_id</span> <span class="o">=</span> <span class="n">get_chat_id</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>

@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>telegram_bot_discussion.functions.from_user &mdash; Telegram-Bot-Discussion  documentation</title>
+  <title>telegram_bot_discussion.functions.from_id &mdash; Telegram-Bot-Discussion  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
 
@@ -92,7 +92,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
-      <li class="breadcrumb-item active">telegram_bot_discussion.functions.from_user</li>
+      <li class="breadcrumb-item active">telegram_bot_discussion.functions.from_id</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -101,34 +101,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for telegram_bot_discussion.functions.from_user</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">telegram</span> <span class="kn">import</span> <span class="p">(</span>
+  <h1>Source code for telegram_bot_discussion.functions.from_id</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span>
+
+
+<span class="kn">from</span> <span class="nn">telegram</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">Update</span><span class="p">,</span>
-    <span class="n">User</span><span class="p">,</span>
 <span class="p">)</span>
+<span class="kn">from</span> <span class="nn">telegram.ext</span> <span class="kn">import</span> <span class="n">CallbackContext</span>
 
 
-<div class="viewcode-block" id="FromUserWasNotFetched">
-<a class="viewcode-back" href="../../../docstrings/functions/index.html#telegram_bot_discussion.functions.from_user.FromUserWasNotFetched">[docs]</a>
-<span class="k">class</span> <span class="nc">FromUserWasNotFetched</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="n">__FROM_ID</span> <span class="o">=</span> <span class="s2">&quot;from_id&quot;</span>
+
+
+<div class="viewcode-block" id="FromIdWasNotFetched">
+<a class="viewcode-back" href="../../../docstrings/functions/index.html#telegram_bot_discussion.functions.from_id.FromIdWasNotFetched">[docs]</a>
+<span class="k">class</span> <span class="nc">FromIdWasNotFetched</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">&quot;from_user was not fetched&quot;</span></div>
+        <span class="k">return</span> <span class="s2">&quot;from_user.id was not fetched&quot;</span></div>
 
 
 
-<div class="viewcode-block" id="get_from_user">
-<a class="viewcode-back" href="../../../docstrings/functions/index.html#telegram_bot_discussion.functions.from_user.get_from_user">[docs]</a>
-<span class="k">def</span> <span class="nf">get_from_user</span><span class="p">(</span><span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">User</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;get_from_user() try fetch `User` (from `update.message`, `update.callback_query`) of initiator (it can be User, Chat, Channel), which appeal to `Telegram-bot`.</span>
+<div class="viewcode-block" id="get_from_id">
+<a class="viewcode-back" href="../../../docstrings/functions/index.html#telegram_bot_discussion.functions.from_id.get_from_id">[docs]</a>
+<span class="k">def</span> <span class="nf">get_from_id</span><span class="p">(</span>
+    <span class="n">update</span><span class="p">:</span> <span class="n">Update</span><span class="p">,</span>
+    <span class="n">context</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">CallbackContext</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;get_from_id() try fetch `from_user.id` (from `update.message`, `update.callback_query` or `context`) of initiator (`User`), which appeal to `Telegram-bot`.</span>
 
-<span class="sd">    :raises FromUserWasNotFetched: When initiator was not detected.</span>
+<span class="sd">    :raises FromIdWasNotFetched: When initiator ID was not detected.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">update</span><span class="o">.</span><span class="n">message</span> <span class="ow">and</span> <span class="n">update</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">from_user</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">update</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">from_user</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">:</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">bot_data</span><span class="p">[</span><span class="n">__FROM_ID</span><span class="p">]</span> <span class="o">=</span> <span class="n">update</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">from_user</span><span class="o">.</span><span class="n">id</span>
+        <span class="k">return</span> <span class="n">update</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">from_user</span><span class="o">.</span><span class="n">id</span>
+    <span class="c1"># TODO: test</span>
     <span class="k">elif</span> <span class="n">update</span><span class="o">.</span><span class="n">callback_query</span> <span class="ow">and</span> <span class="n">update</span><span class="o">.</span><span class="n">callback_query</span><span class="o">.</span><span class="n">from_user</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">update</span><span class="o">.</span><span class="n">callback_query</span><span class="o">.</span><span class="n">from_user</span>
+        <span class="k">if</span> <span class="n">context</span><span class="p">:</span>
+            <span class="n">context</span><span class="o">.</span><span class="n">bot_data</span><span class="p">[</span><span class="n">__FROM_ID</span><span class="p">]</span> <span class="o">=</span> <span class="n">update</span><span class="o">.</span><span class="n">callback_query</span><span class="o">.</span><span class="n">from_user</span><span class="o">.</span><span class="n">id</span>
+        <span class="k">return</span> <span class="n">update</span><span class="o">.</span><span class="n">callback_query</span><span class="o">.</span><span class="n">from_user</span><span class="o">.</span><span class="n">id</span>
+    <span class="k">elif</span> <span class="n">context</span> <span class="ow">and</span> <span class="n">context</span><span class="o">.</span><span class="n">bot_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">__FROM_ID</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="n">bot_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">__FROM_ID</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="n">FromUserWasNotFetched</span><span class="p">()</span></div>
+        <span class="k">raise</span> <span class="n">FromIdWasNotFetched</span><span class="p">()</span></div>
 
 </pre></div>
 

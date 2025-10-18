@@ -154,19 +154,19 @@
 </dl>
 </dd></dl>
 
-<dl class="py exception">
-<dt class="sig sig-object py" id="telegram_bot_discussion.functions.from_user.FromIdWasNotFetched">
-<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.functions.from_user.</span></span><span class="sig-name descname"><span class="pre">FromIdWasNotFetched</span></span><a class="reference internal" href="../../_modules/telegram_bot_discussion/functions/from_user.html#FromIdWasNotFetched"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.functions.from_user.FromIdWasNotFetched" title="Link to this definition"></a></dt>
+<dl class="py exception" id="module-telegram_bot_discussion.functions.from_id">
+<dt class="sig sig-object py" id="telegram_bot_discussion.functions.from_id.FromIdWasNotFetched">
+<em class="property"><span class="k"><span class="pre">exception</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.functions.from_id.</span></span><span class="sig-name descname"><span class="pre">FromIdWasNotFetched</span></span><a class="reference internal" href="../../_modules/telegram_bot_discussion/functions/from_id.html#FromIdWasNotFetched"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.functions.from_id.FromIdWasNotFetched" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="telegram_bot_discussion.functions.from_user.get_from_id">
-<span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.functions.from_user.</span></span><span class="sig-name descname"><span class="pre">get_from_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/functions/from_user.html#get_from_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.functions.from_user.get_from_id" title="Link to this definition"></a></dt>
-<dd><p>get_from_id() try fetch <cite>user_id</cite> (from <cite>update.message</cite>, <cite>update.callback_query</cite> or <cite>context</cite>) of initiator (it can be <cite>User</cite>, <cite>Chat</cite>, <cite>Channel</cite>), which appeal to <cite>Telegram-bot</cite>.</p>
+<dt class="sig sig-object py" id="telegram_bot_discussion.functions.from_id.get_from_id">
+<span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.functions.from_id.</span></span><span class="sig-name descname"><span class="pre">get_from_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">update</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/functions/from_id.html#get_from_id"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.functions.from_id.get_from_id" title="Link to this definition"></a></dt>
+<dd><p>get_from_id() try fetch <cite>from_user.id</cite> (from <cite>update.message</cite>, <cite>update.callback_query</cite> or <cite>context</cite>) of initiator (<cite>User</cite>), which appeal to <cite>Telegram-bot</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#telegram_bot_discussion.functions.from_user.FromUserWasNotFetched" title="telegram_bot_discussion.functions.from_user.FromUserWasNotFetched"><strong>FromUserWasNotFetched</strong></a> – When initiator was not detected.</p>
+<dd class="field-odd"><p><a class="reference internal" href="#telegram_bot_discussion.functions.from_id.FromIdWasNotFetched" title="telegram_bot_discussion.functions.from_id.FromIdWasNotFetched"><strong>FromIdWasNotFetched</strong></a> – When initiator ID was not detected.</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span></p>
