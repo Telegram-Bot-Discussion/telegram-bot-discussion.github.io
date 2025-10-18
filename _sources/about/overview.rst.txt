@@ -1,7 +1,7 @@
-Quick start
+Overview
 ==============
 
-In short, the key entities of the `Telegram-Bot-Discussion` are presented below.:
+The key entities of the `Telegram-Bot-Discussion` are presented below:
 
 * `Replica` is parametrized presentation class of `Telegram-message`.
 * `Dialog` between `Telegram-bot` and `Telegram-user` is an yielded iterator of `Replicas`.

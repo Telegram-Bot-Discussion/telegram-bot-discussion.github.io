@@ -14,7 +14,7 @@ Developer in its `Discussion` just construct `Dialogue` logic by `Replicas` sequ
 
    ./about/index.rst
    ./about/install.rst
-   ./about/quick_start.rst
+   ./about/overview.rst
 
 .. toctree::
    :maxdepth: 1
