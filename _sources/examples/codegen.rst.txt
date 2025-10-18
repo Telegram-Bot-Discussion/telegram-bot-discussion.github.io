@@ -1,0 +1,30 @@
+Code generation
+===============
+
+`Telegram-Bot-Discussion` contains function for template project generation:
+
+.. code-block:: bash
+
+    python3 -m telegram_bot_discussion.main --new ./directory
+    cd ./directory
+
+
+Put your values of `TOKEN` and `SECRET` variables at `./main/config.py` and run:
+
+.. code-block:: bash
+    
+    python3 main/main.py 
+
+At result you will see `Template Bot` example with basic entities of `Telegram-Bot-Discussion`:
+
+* `Discussion`;
+* `Dialogue`;
+* `Replica`;
+* `Replica Handler`;
+* `Command`;
+* `Command Handler`;
+* `Button`;
+* `Button Handler`;
+* `Config`;
+* `Logging`.
+
