@@ -1,7 +1,7 @@
 Command button
 ----------------------------------
 
-Put command into button make reaction on click `Telegram`-button as `Telegram`-command call.
+Put command into button make reaction on click `Telegram-button` as `Telegram-command` call.
 
 .. automodule:: telegram_bot_discussion.ext.command_button.command_button_param
    :members:
