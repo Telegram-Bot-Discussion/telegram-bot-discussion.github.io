@@ -12,6 +12,6 @@ Examples
 There are examples of developments based on `Telegram-Bot-Discussion`:
 
 * special repository of `demos code <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>`_ (also see :doc:`page <./demos>`);
-* work demos in `Telegram` infrastructure (see `@tg_bot_discussion <https://t.me/tg_bot_discussion>`_);
+* runned these demos in `Telegram` infrastructure (slightly modified, see `@tg_bot_discussion <https://t.me/tg_bot_discussion>`_);
 * code generated template example integrated inside package `Telegram-Bot-Discussion` (see :doc:`page <./codegen>`).
    

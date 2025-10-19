@@ -1,6 +1,8 @@
 Demos
 -----
 
+Demos code is start hosted in `GitVerse Repository <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>`_.
+
 Here demos list of `Telegram-Bot-Discussion` framework usage (ordered by complexity) and online-demos for some one (which frontend part can be demonstrate effectively):
 
 * `"Hello World Bot"` - say "Hello World" for any entered `Telegram-user` replica (try this by bot demo  `@tbd_hello_world_bot <https://t.me/tbd_hello_world_bot>`_).
@@ -38,5 +40,3 @@ And here other examples, which focus at backend and can't be demonstrate:
 * `"Json Logger Bot"` - show custom implementation of `Telegram-Bot-Discussion` logger interface.
 
 * `"Chat Monitoring Bot"` - show case when message `chat_id` and `recipient_id` are differ. Add bot to your group or chat as admin and type any statement with substring `"password"`. Bot send personal button to you in chat. Other user can not get reaction from this button.
-
-These demos code is start hosted in `GitVerse Repository <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>`_.
