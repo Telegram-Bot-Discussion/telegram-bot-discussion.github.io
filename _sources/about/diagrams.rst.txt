@@ -1,0 +1,9 @@
+Explanatory diagrams
+====================
+
+Schema of Telegram-user interaction with the Telegram-bot Dialogue
+------------------------------------------------------------------
+
+.. image:: /_static/images/diagrams/dialogue_schema.png 
+    :alt: Explanation of Telegram-user interaction with the Telegram-bot Dialogue.
+    :width: 100%
