@@ -140,8 +140,8 @@
 <div class="viewcode-block" id="StoreCoder">
 <a class="viewcode-back" href="../../../../docstrings/ext/coder/store_coder.html#telegram_bot_discussion.ext.coder.store_coder.StoreCoder">[docs]</a>
 <span class="k">class</span> <span class="nc">StoreCoder</span><span class="p">(</span><span class="n">CoderInterface</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;`StoreCoder` serialize data and save its value in external storage with unique primary key.</span>
-<span class="sd">    Primary key store at `Button`. For deserialize data was get from external storage by primary key.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;`StoreCoder` StoreCoder serializes data and saves its value in an external storage with unique primary key.</span>
+<span class="sd">    The primary key is stored in the `Button`. For deserialization, the data is got from the external storage by primary key.</span>
 
 <span class="sd">    So there are no any limits for callback query data (long strings, complex multi params, redundant big json and etc.).</span>
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -149,7 +149,7 @@
     <span class="n">db</span><span class="p">:</span> <span class="n">KeyValueStorageInterface</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot; KeyValueStorageInterface: external storage where custom values of `Params` are stored.&quot;&quot;&quot;</span>
     <span class="n">secret</span><span class="p">:</span> <span class="nb">str</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; str: Secret string is used for make digital signature of data.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot; str: Secret string is used for making digital signature of data.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">secret</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">db</span><span class="p">:</span> <span class="n">KeyValueStorageInterface</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">secret</span> <span class="o">=</span> <span class="n">secret</span>

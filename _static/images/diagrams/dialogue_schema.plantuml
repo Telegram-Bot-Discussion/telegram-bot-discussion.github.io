@@ -1,0 +1,88 @@
+@startuml
+!pragma teoz true
+header Explanation of Telegram-Bot-Discussion Dialogue
+
+title "Schematic representation of the dialogue construction and operation principle"
+
+actor "Telegram-user\n(User)" as User #FFF
+
+box "Telegram-bot (Bot)"
+    box "based on Telegram-Bot-Discussion framework"
+        boundary    "Messages handler\n- command call\n- button click\n- other message" as Handler #555
+        queue       "Dialogue as sequence of yielded Replicas" as Dialogue #a15656ff
+        database    "Active dialogues registry" as Dialogues #555
+    end box
+end box
+
+
+User        ->  Handler     : An initial User request.
+Handler     ->  Dialogue    : Start Dialogue
+note right #a15656ff
+  ... init iterator over yielded Replicas
+end note
+Handler     ->  Dialogues   : and put its yield-function\nin dialogues registry and get first Dialogue Replica.
+
+
+deactivate Dialogues
+note right of Dialogues #a15656ff
+  ... yield Replica "A"
+end note
+&Dialogues   ->  Handler     : Dialogue yield Replica "A".
+note right of Dialogues #555
+  Wait User response to Replica "A"
+end note
+
+activate Dialogues #555
+Handler     ->  User        : Bot reply to User with Replica "A".
+
+User        ->  Handler     : An User response to Replica "A".
+Handler     ->  Dialogues   : Fetch User response to Replica "A" and get next Replica.
+deactivate Dialogues
+
+note right of Dialogues #a15656ff
+  ... yield Replica "B"
+end note
+& Dialogues   ->  Handler     : Dialogue yield Replica "B".
+note right of Dialogues #555
+  Wait User response to Replica "B"
+end note
+
+activate Dialogues #555 
+Handler     ->  User        : Bot reply to User with Replica "B".
+
+User        ->  Handler     : An User response to Replica "B".
+Handler     ->  Dialogues   : Fetch User response to Replica "B" and get next Replica.
+deactivate Dialogues
+
+note right of Dialogues #a15656ff
+    ... yield special NoNeedReaction-Replica (over Replica "С")
+end note
+& Dialogues   ->  Handler     : Dialogue yield special NoNeedReaction-Replica (over Replica "С").
+Handler   ->  User        : Bot reply to User with Replica "С".
+
+
+note right of Dialogues #a15656ff
+  ... yield Replica "D"
+end note
+& Dialogues   ->  Handler     : Dialogue yield Replica "D".
+note right of Dialogues #555
+  Wait User response to Replica "D"
+end note
+
+activate Dialogues #555 
+Handler     ->  User        : Bot reply to User with Replica "D".
+
+User        ->  Handler     : An User response to Replica "D".
+Handler     ->  Dialogues   : Fetch User response to Replica "D" and get next Replica.
+
+deactivate Dialogues
+
+
+Dialogues   ->  Handler     : Dialogue yield special Stop-Replica (over Last-Replica).
+note right #a15656ff
+  ... yield special Stop Replica (over Last-Replica)
+end note
+Handler     -> Dialogues   : Stop dialogue as delete yield-function\nfrom dialogues registry.
+Handler   -> User        : Bot reply to User with Last-Replica.
+
+@enduml

@@ -110,15 +110,15 @@
 <div class="viewcode-block" id="CoderInterface">
 <a class="viewcode-back" href="../../../docstrings/button/coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface">[docs]</a>
 <span class="k">class</span> <span class="nc">CoderInterface</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;`CoderInterface` is interface for class, which serialize `Button`-`Params` values for storing them at `Button` and deserialize data from callback query to special `Button`-`Params` structure.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;`CoderInterface` is an interface for class that serializes `Button`-`Params` values for storing them in a `Button`, and deserializes data from a callback query into a special `Button`-`Params` structure.</span>
 
 <span class="sd">    In the box `Telegram-Bot-Discussion` contains two realizations of `CoderInterface`:</span>
 
-<span class="sd">    - store callback query data within `Button` as callback action `Params` (with limited by native `Telegram` protocol data length (64 bytes) and variables types - int, string, because no need more for more tasks).</span>
+<span class="sd">    - store callback query data within `Button` as callback action `Params` (limited by the native `Telegram` protocol data length (64 bytes) and variable types — int, string, because there is no need for more in most tasks).</span>
 
-<span class="sd">    - store unique identity of callback action `Params`, which are loaded when user click `Button` (no any limits of callback data length and variables types, but external storage must work independently).</span>
+<span class="sd">    - store unique identity of callback action `Params`, which are loaded when the user clicks the `Button` (no limits of callback data length and variables types, but external storage must work independently).</span>
 
-<span class="sd">    You can write self `Coder`-class based on `Pickle`, `ProtoBuf`, `FlatBuffers` and etc. I stopped on the byte-separated values format as more visual and clear.</span>
+<span class="sd">    You can write your own `Coder`-class based on `Pickle`, `ProtoBuf`, `FlatBuffers` and etc. I stopped on the byte-separated values format as it is more visual and clear.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">_instance</span> <span class="o">=</span> <span class="kc">None</span>

@@ -118,8 +118,8 @@
 <dt class="sig sig-object py" id="telegram_bot_discussion.button.params.params.Params">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">telegram_bot_discussion.button.params.params.</span></span><span class="sig-name descname"><span class="pre">Params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/button/params/params.html#Params"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.button.params.params.Params" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p><cite>Telegram-button</cite> callback query store some data. When User click button this data is return to bot.</p>
-<p>So <cite>Params</cite> formalize storing more then one value in callback query and fetching after button click.</p>
+<p><cite>Telegram-button</cite> callback query stores some data. When the User clicks the button, this data is returned to the bot.</p>
+<p>So, <cite>Params</cite> formalizes storing more than one value in the callback query and fetching it after the button click.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>action</strong> (<em>str</em>)</p>
@@ -128,7 +128,7 @@
 <dl class="py attribute">
 <dt class="sig sig-object py" id="telegram_bot_discussion.button.params.params.Params.action">
 <span class="sig-name descname"><span class="pre">action</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#telegram_bot_discussion.button.params.params.Params.action" title="Link to this definition"></a></dt>
-<dd><p>All params must be associated with some action, which is used for handlers reaction route.</p>
+<dd><p>All params must be associated with some actions, which are used for handlers reaction route..</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>str</p>
@@ -139,12 +139,12 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="telegram_bot_discussion.button.params.params.Params.fetch">
 <em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fetch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback_query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coder</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/telegram_bot_discussion/button/params/params.html#Params.fetch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#telegram_bot_discussion.button.params.params.Params.fetch" title="Link to this definition"></a></dt>
-<dd><p>Fetch data from <cite>Telegram-button</cite> callback query into special structure named <cite>Params</cite>.</p>
+<dd><p>Fetch data from <cite>Telegram-button</cite> callback query into a special structure named <cite>Params</cite>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>callback_query</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">CallbackQuery</span></code>]</span>) – <cite>Telegram-button</cite> callback query data</p></li>
-<li><p><strong>coder</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoderInterface</span></code></a></span>) – algorithm of serializing and deserializing stored in <cite>Telegram-button</cite> data</p></li>
+<li><p><strong>coder</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="coder_interface.html#telegram_bot_discussion.button.coder_interface.CoderInterface" title="telegram_bot_discussion.button.coder_interface.CoderInterface"><code class="xref py py-class docutils literal notranslate"><span class="pre">CoderInterface</span></code></a></span>) – algorithm of serializing and deserializing stored in a <cite>Telegram-button</cite> data</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>

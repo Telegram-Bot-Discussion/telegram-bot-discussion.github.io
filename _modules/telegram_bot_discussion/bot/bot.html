@@ -138,7 +138,7 @@
 <div class="viewcode-block" id="ApplicationWasNotInit">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.ApplicationWasNotInit">[docs]</a>
 <span class="k">class</span> <span class="nc">ApplicationWasNotInit</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Exception raise when `Telegram-bot` application was not init in some reason (in the general case `Telegram-bot` application initialized automatically).&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Exception raised when `Telegram-bot` application was not init in some reason (in the general case `Telegram-bot` application initialized automatically).&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="kc">None</span>
@@ -157,9 +157,9 @@
 <div class="viewcode-block" id="Discussion">
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion">[docs]</a>
 <span class="k">class</span> <span class="nc">Discussion</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Discussion` is main class of your `Telegram-bot` application.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;`Discussion` is the main class of your `Telegram-bot` application.</span>
 
-<span class="sd">    It could be say that the `Discussion` is `Telegram-bot`.&quot;&quot;&quot;</span>
+<span class="sd">    It could be said that the `Discussion` is the `Telegram-bot` itself.&quot;&quot;&quot;</span>
 
     <span class="n">_application</span><span class="p">:</span> <span class="n">Application</span>
     <span class="n">config</span><span class="p">:</span> <span class="n">Config</span>
@@ -201,9 +201,7 @@
 <a class="viewcode-back" href="../../../docstrings/bot/index.html#telegram_bot_discussion.bot.bot.Discussion.get_dialogues">[docs]</a>
     <span class="k">def</span> <span class="nf">get_dialogues</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Dialogues structure `Dict[int, Iterable]` - is one of main `telegram-bot-discussion` ideas.</span>
-
-<span class="sd">        It is a dictionary collection of pairs of `Telegram-user` ID and the next stage of `Telegram-bot` dialogue.</span>
+<span class="sd">        Dialogues structure `Dict[int, Iterable]` - is a dictionary collection of pairs of `Telegram-user` ID and the next stage of `Telegram-bot` dialogue.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dialogues</span></div>

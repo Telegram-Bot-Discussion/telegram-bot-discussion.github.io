@@ -1,7 +1,6 @@
 Demos
 -----
-
-Demos code is start hosted in `GitVerse Repository <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>`_.
+Demos code is hosted in `GitVerse Repository <https://gitverse.ru/BorisPlus/Telegram-Bot-Discussion-Examples>`_.
 
 Here demos list of `Telegram-Bot-Discussion` framework usage (ordered by complexity) and online-demos for some one (which frontend part can be demonstrate effectively):
 
